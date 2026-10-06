@@ -192,10 +192,7 @@ function updateProgress(){
   if(progressText) progressText.innerHTML=remaining?("<strong>"+remaining+" pts</strong> until you reach Home Cook."):"Home Cook reached.";
 }
 document.getElementById("cookNow").addEventListener("click",()=>{
-  userPoints+=20;
-  localStorage.setItem("communityCooksPoints",String(userPoints));
-  updateProgress();
-  document.getElementById("progressMessage").textContent="+20 points. Cook logged.";
+  document.getElementById("cookTitle").textContent="Log a cook";
   openCookModal();
 });
 document.getElementById("closeCook").addEventListener("click",closeCookModal);
