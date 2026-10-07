@@ -37,12 +37,22 @@ const RECIPES = [
 {id:36,name:"Chickpea Coconut Curry",type:"Dinner",time:35,cuisine:"Indian-inspired",tags:["dinner","vegetarian","budget"],description:"Chickpeas simmered in a creamy coconut tomato curry.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",ingredients:["1 tbsp oil","1 onion, diced","2 garlic cloves","1 tbsp curry powder","1 can chickpeas","1 can diced tomatoes","1 cup coconut milk","1/2 tsp salt","Spinach, optional"],steps:["Cook onion in oil until soft.","Add garlic and curry powder for 30 seconds.","Stir in chickpeas and tomatoes.","Add coconut milk and simmer for 15 minutes.","Stir in spinach if using and cook until wilted. Serve with rice."]}
 ];
 
+let LIBRARY_RECIPES = RECIPES;
+async function loadRecipeLibrary(){
+ try{
+  const response=await fetch("data/recipes.json");
+  if(!response.ok) throw new Error("recipe library unavailable");
+  const data=await response.json();
+  if(Array.isArray(data)&&data.length) LIBRARY_RECIPES=data;
+ }catch(error){ console.warn("Using built-in recipe library.",error); }
+ renderRecipes(); renderSaved(); renderHistory(); renderPlanner?.();
+}
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function storage(key,fallback){try{const raw=localStorage.getItem(key);return raw===null?fallback:JSON.parse(raw)}catch{return fallback}}
 function setStorage(key,value){localStorage.setItem(key,JSON.stringify(value))}
 function getUserRecipes(){return storage("ccRecipes",[])}
-function allRecipes(){return [...RECIPES,...getUserRecipes()]}
+function allRecipes(){return [...LIBRARY_RECIPES,...getUserRecipes()]}
 function findRecipe(id){return allRecipes().find(r=>String(r.id)===String(id))}
 function points(){return Number(localStorage.getItem("ccPoints")||0)}
 function addPoints(amount,reason){const next=points()+amount;localStorage.setItem("ccPoints",String(next));return next}
@@ -135,4 +145,4 @@ function initLeaderboard(){
  $("logCook")?.addEventListener("click",()=>{addPoints(30,"cook");initLeaderboard();$("progressMessage").textContent="Cook logged. +30 points."});
 }
 window.RECIPES=RECIPES; window.allRecipes=allRecipes; window.findRecipe=findRecipe; window.recipeImage=recipeImage; window.addPoints=addPoints; window.points=points; window.logCook=logCook; window.storage=storage; window.setStorage=setStorage;
-document.addEventListener("DOMContentLoaded",()=>{renderRecipes();renderRecipe();renderSaved();renderHistory();saveRecipeForm();initFilters();initChallenge();initLeaderboard()});
+document.addEventListener("DOMContentLoaded",()=>{renderRecipe();saveRecipeForm();initFilters();initChallenge();initLeaderboard();loadRecipeLibrary()});
