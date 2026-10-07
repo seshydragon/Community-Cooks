@@ -2,6 +2,24 @@ const plannerDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
 const baseMeals=["Breakfast","Lunch","Dinner"];
 const avoidWords={"no-peanuts":["peanut"],"no-tree-nuts":["almond","cashew","walnut","pecan","pistachio","hazelnut"],"no-eggs":["egg"],"no-soy":["soy","tofu","edamame","miso"],"no-shellfish":["shrimp","prawn","crab","lobster","shellfish"],"no-sesame":["sesame","tahini"]};
 function escPlanner(v){return String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function initFilterDropdowns(){
+  const filters=[...document.querySelectorAll(".multi-filter")];
+  filters.forEach(filter=>{
+    filter.addEventListener("toggle",()=>{
+      if(!filter.open)return;
+      filters.forEach(other=>{
+        if(other!==filter)other.removeAttribute("open");
+      });
+    });
+  });
+  document.addEventListener("click",event=>{
+    if(!event.target.closest(".multi-filter")){
+      filters.forEach(filter=>filter.removeAttribute("open"));
+    }
+  });
+}
+
 function selectedPreferences(){return [...document.querySelectorAll("[data-pref]:checked")].map(x=>x.value)}
 function selectedMeals(){const m=[...document.querySelectorAll("[data-meal]:checked")].map(x=>x.value);return m.length?m:baseMeals.map(x=>x.toLowerCase())}
 function recipeText(r){return ((r.name||"")+" "+(r.description||"")+" "+(r.ingredients||[]).join(" ")+" "+(r.tags||[]).join(" ")).toLowerCase()}
