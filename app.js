@@ -1,275 +1,41 @@
 const recipes=[
-{id:1,name:"Weeknight Grain Bowl",time:25,rating:"4.9",cooks:28,category:["quick","vegetarian","budget"],tag:"Community pick",description:"Roasted vegetables, warm grains, lemon dressing, and a handful of herbs.",cook:"Maya Chen",initials:"MC",image:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=82"},
-{id:2,name:"Tomato Butter Pasta",time:22,rating:"4.8",cooks:41,category:["quick","budget"],tag:"Most cooked",description:"Silky tomato sauce with browned butter, parmesan, and cracked pepper.",cook:"Jon Bell",initials:"JB",image:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=82"},
-{id:3,name:"Crisp Chickpea Salad",time:15,rating:"4.7",cooks:19,category:["quick","vegetarian","budget"],tag:"15 minute",description:"Crunchy chickpeas, cucumber, herbs, and a bright tahini dressing.",cook:"Priya Shah",initials:"PS",image:"https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=82"},
-{id:4,name:"Skillet Chicken & Rice",time:38,rating:"4.9",cooks:35,category:["budget"],tag:"Dinner",description:"Golden chicken, toasted rice, garlic, and greens in one deep skillet.",cook:"Andre Lewis",initials:"AL",image:"https://images.unsplash.com/photo-1516684669134-de6f7c473a2a?auto=format&fit=crop&w=900&q=82"},
-{id:5,name:"Charred Corn Tacos",time:27,rating:"4.8",cooks:24,category:["quick","vegetarian"],tag:"Trending",description:"Charred corn, black beans, lime crema, and crunchy cabbage.",cook:"Nora Ellis",initials:"NE",image:"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=82"},
-{id:6,name:"Lemon Herb Roast",time:52,rating:"4.9",cooks:17,category:["budget"],tag:"Sunday",description:"A simple roast with lemon, rosemary, crisp potatoes, and pan juices.",cook:"Sam Rivera",initials:"SR",image:"https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=82"}
+{id:1,name:"Weeknight Grain Bowl",time:25,category:["quick","vegetarian","budget"],tag:"Weeknight",description:"Roasted vegetables, warm grains, lemon dressing, and herbs.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=84",ingredients:["2 cups cooked grains","1 cup roasted vegetables","2 cups greens","2 tbsp lemon dressing","Fresh herbs"],steps:["Roast the vegetables until browned and tender.","Warm the grains and prepare the greens.","Build the bowl and add the dressing.","Finish with herbs and lemon."]},
+{id:2,name:"Tomato Butter Pasta",time:22,category:["quick","budget"],tag:"Weeknight",description:"Silky tomato sauce with browned butter, parmesan, and cracked pepper.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=84",ingredients:["8 oz pasta","1 cup tomato sauce","2 tbsp butter","Parmesan","Black pepper"],steps:["Cook the pasta until just tender.","Brown the butter in a pan.","Add tomato sauce and simmer.","Toss with pasta and finish with parmesan."]},
+{id:3,name:"Crisp Chickpea Salad",time:15,category:["quick","vegetarian","budget"],tag:"15 minutes",description:"Crunchy chickpeas, cucumber, herbs, and a bright tahini dressing.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=84",ingredients:["1 can chickpeas","1 cucumber","Fresh herbs","2 tbsp tahini","Lemon juice"],steps:["Drain and rinse the chickpeas.","Chop cucumber and herbs.","Whisk tahini with lemon juice.","Toss everything together and serve."]},
+{id:4,name:"Skillet Chicken & Rice",time:38,category:["budget"],tag:"Dinner",description:"Golden chicken, toasted rice, garlic, and greens in one skillet.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1516684669134-de6f7c473a2a?auto=format&fit=crop&w=1000&q=84",ingredients:["Chicken thighs","1 cup rice","Garlic","2 cups broth","Greens"],steps:["Brown the chicken in a skillet.","Toast the rice with garlic.","Add broth and return the chicken.","Cover until the rice is tender and finish with greens."]},
+{id:5,name:"Charred Corn Tacos",time:27,category:["quick","vegetarian"],tag:"Quick",description:"Charred corn, black beans, lime crema, and crunchy cabbage.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1000&q=84",ingredients:["Corn tortillas","1 cup corn","1 cup black beans","Cabbage","Lime"],steps:["Char the corn in a hot pan.","Warm the tortillas.","Layer beans, corn, and cabbage.","Finish with lime."]},
+{id:6,name:"Lemon Herb Roast",time:52,category:["budget"],tag:"Weekend",description:"A simple roast with lemon, rosemary, crisp potatoes, and pan juices.",creator:"Community Cooks",image:"https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=84",ingredients:["Chicken or vegetables","Potatoes","Lemon","Rosemary","Olive oil"],steps:["Heat the oven and prepare the tray.","Season everything with lemon, rosemary, and oil.","Roast until browned and tender.","Rest briefly before serving."]}
 ];
-
-const leaderboard=[
-["01","Maya Chen","18 cooks","640 pts","MC"],
-["02","Jon Bell","16 cooks","590 pts","JB"],
-["03","Priya Shah","14 cooks","520 pts","PS"],
-["04","Andre Lewis","12 cooks","480 pts","AL"],
-["05","Nora Ellis","10 cooks","430 pts","NE"]
-];
-
+const leaderboard=[["01","Community Cook","18","640"],["02","Community Cook","16","590"],["03","Community Cook","14","520"],["04","Community Cook","12","480"],["05","Community Cook","10","430"]];
 const $=id=>document.getElementById(id);
-const recipeGrid=$("recipeGrid");
-const emptyState=$("emptyState");
-const searchInput=$("searchInput");
-const filterRow=$("filterRow");
-const filterToggle=$("filterToggle");
-const recipeModal=$("recipeModal");
-const recipeForm=$("recipeForm");
-const cookModal=$("cookModal");
-let currentFilter="all";
-
-function safeStorage(key,fallback){
-  try{
-    const value=localStorage.getItem(key);
-    return value===null?fallback:JSON.parse(value);
-  }catch{
-    return fallback;
-  }
-}
-
-function getSaved(){
-  const saved=safeStorage("communityCooksSaved",[]);
-  return Array.isArray(saved)?saved:[];
-}
-
-function escapeHTML(value){
-  return String(value??"").replace(/[&<>"']/g,char=>({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[char]));
-}
-
+const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function storage(key,fallback){try{const x=localStorage.getItem(key);return x===null?fallback:JSON.parse(x)}catch{return fallback}}
 function renderRecipes(){
-  const query=searchInput.value.trim().toLowerCase();
-  const saved=getSaved();
-
-  const visible=recipes.filter(recipe=>{
-    const matchesFilter=currentFilter==="all" ||
-      recipe.category.includes(currentFilter) ||
-      (currentFilter==="quick" && recipe.time<30);
-
-    const text=[recipe.name,recipe.description,recipe.cook,recipe.tag].join(" ").toLowerCase();
-    return matchesFilter && text.includes(query);
-  });
-
-  recipeGrid.innerHTML=visible.map(recipe=>{
-    const id=escapeHTML(recipe.id);
-    const savedState=saved.includes(recipe.id);
-
-    return `
-      <article class="recipe-card" tabindex="0" data-recipe="${id}">
-        <div class="recipe-image">
-          <img loading="lazy" src="${escapeHTML(recipe.image)}" alt="${escapeHTML(recipe.name)}">
-          <span class="recipe-tag">${escapeHTML(recipe.tag)}</span>
-          <button class="save-button ${savedState?"saved":""}" type="button" data-save="${id}" aria-label="${savedState?"Remove from saved":"Save"} ${escapeHTML(recipe.name)}">${savedState?"✓":"+"}</button>
-        </div>
-        <div class="recipe-info">
-          <div class="recipe-topline"><span>${escapeHTML(recipe.time)} min</span><span>${escapeHTML(recipe.rating)} rating · ${escapeHTML(recipe.cooks)} cooks</span></div>
-          <h3>${escapeHTML(recipe.name)}</h3>
-          <p>${escapeHTML(recipe.description)}</p>
-          <div class="recipe-byline"><span class="avatar">${escapeHTML(recipe.initials)}</span><span>by ${escapeHTML(recipe.cook)}</span></div>
-          <button class="recipe-cook-button" type="button" data-cook="${id}">Cook this recipe</button>
-        </div>
-      </article>`;
-  }).join("");
-
-  emptyState.hidden=visible.length!==0;
+ const grid=$("recipeGrid"), empty=$("emptyState"); if(!grid)return;
+ const q=($("searchInput")?.value||"").trim().toLowerCase(), filter=document.querySelector(".chip.active")?.dataset.filter||"all";
+ const visible=recipes.filter(r=>(filter==="all"||r.category.includes(filter)||(filter==="quick"&&r.time<30))&&[r.name,r.description,r.creator,r.tag].join(" ").toLowerCase().includes(q));
+ grid.innerHTML=visible.map(r=>`<article class="recipe-card"><div class="recipe-image"><img loading="lazy" src="${esc(r.image)}" alt="${esc(r.name)}"><span class="recipe-tag">${esc(r.tag)}</span></div><div class="recipe-info"><div class="recipe-topline">${r.time} min</div><h2>${esc(r.name)}</h2><p>${esc(r.description)}</p><div class="creator">Created by ${esc(r.creator)}</div><a class="recipe-open" href="recipe.html?id=${r.id}">Open recipe →</a></div></article>`).join("");
+ if(empty)empty.hidden=visible.length>0;
 }
-
+function renderRecipe(){
+ const root=$("recipePage"); if(!root)return;
+ const id=Number(new URLSearchParams(location.search).get("id"))||1, r=recipes.find(x=>x.id===id)||recipes[0];
+ root.innerHTML=`<a class="back-link" href="discover.html">← All recipes</a><section class="recipe-hero"><img src="${esc(r.image)}" alt="${esc(r.name)}"><div class="recipe-details"><p class="eyebrow">Recipe</p><h1>${esc(r.name)}</h1><p class="description">${esc(r.description)}</p><p class="creator-line">Created by <strong>${esc(r.creator)}</strong> · ${r.time} minutes</p></div></section><section class="recipe-body"><div><p class="eyebrow">Ingredients</p><h2>What you need.</h2><ul>${r.ingredients.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div><p class="eyebrow">Method</p><h2>How to make it.</h2><ol>${r.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></div></section>`;
+}
 function renderLeaderboard(){
-  $("rankList").innerHTML=leaderboard.map(row=>`
-    <div class="rank-row">
-      <span class="rank-number">${row[0]}</span>
-      <div class="rank-person"><span class="avatar">${row[4]}</span><div><strong>${row[1]}</strong><span>Community cook</span></div></div>
-      <span class="rank-cooks">${row[2]}</span>
-      <span class="rank-points">${row[3]}</span>
-    </div>`).join("");
+ const root=$("rankList"); if(!root)return;
+ root.innerHTML=leaderboard.map(r=>`<div class="rank-row"><span>${r[0]}</span><strong>${r[1]}</strong><span>${r[2]} cooks</span><span>${r[3]} pts</span></div>`).join("");
+ const points=Math.max(0,Number(storage("ccPoints",0))||0); updateProgress(points);
 }
-
-function openRecipeModal(){
-  recipeModal.hidden=false;
-  document.body.classList.add("modal-open");
-  const firstInput=recipeModal.querySelector("input");
-  if(firstInput) firstInput.focus();
+function updateProgress(points){
+ if(!$("userPoints"))return;
+ $("userPoints").textContent=points+" pts"; $("progressBar").style.width=Math.min(100,points/250*100)+"%"; $("progressText").textContent=points<250?(250-points)+" pts until 250.":"250 pts reached.";
 }
-
-function closeRecipeModal(){
-  recipeModal.hidden=true;
-  document.body.classList.remove("modal-open");
-}
-
-function openCookModal(){
-  cookModal.hidden=false;
-  document.body.classList.add("modal-open");
-  $("closeCook").focus();
-}
-
-function closeCookModal(){
-  cookModal.hidden=true;
-  document.body.classList.remove("modal-open");
-}
-
-document.querySelectorAll("[data-open-recipe]").forEach(button=>{
-  button.addEventListener("click",openRecipeModal);
+document.addEventListener("click",e=>{
+ const chip=e.target.closest(".chip"); if(chip){document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));chip.classList.add("active");renderRecipes()}
 });
-
-document.querySelectorAll("[data-close-modal]").forEach(button=>{
-  button.addEventListener("click",closeRecipeModal);
-});
-
-recipeModal.addEventListener("click",event=>{
-  if(event.target===recipeModal) closeRecipeModal();
-});
-
-cookModal.addEventListener("click",event=>{
-  if(event.target===cookModal) closeCookModal();
-});
-
-recipeForm.addEventListener("submit",event=>{
-  event.preventDefault();
-
-  const data=new FormData(recipeForm);
-  const name=String(data.get("name")||"").trim();
-  const time=Number(data.get("time"));
-  const description=String(data.get("description")||"").trim();
-  const category=String(data.get("category")||"quick");
-
-  if(!name || !description || !Number.isFinite(time) || time<1) return;
-
-  recipes.unshift({
-    id:Date.now(),
-    name,
-    time,
-    rating:"New",
-    cooks:0,
-    category:[category],
-    tag:"New recipe",
-    description,
-    cook:"You",
-    initials:"YC",
-    image:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=82"
-  });
-
-  closeRecipeModal();
-  recipeForm.reset();
-  currentFilter="all";
-  searchInput.value="";
-
-  document.querySelectorAll(".chip").forEach(item=>{
-    item.classList.toggle("active",item.dataset.filter==="all");
-  });
-
-  renderRecipes();
-  window.location.hash="discover";
-});
-
-document.addEventListener("click",event=>{
-  const saveButton=event.target.closest("[data-save]");
-  if(saveButton){
-    event.stopPropagation();
-    const id=Number(saveButton.dataset.save);
-    let saved=getSaved();
-    saved=saved.includes(id) ? saved.filter(item=>item!==id) : saved.concat(id);
-    try{localStorage.setItem("communityCooksSaved",JSON.stringify(saved));}catch{}
-    renderRecipes();
-    return;
-  }
-
-  const cookButton=event.target.closest("[data-cook]");
-  if(cookButton){
-    event.stopPropagation();
-    const recipe=recipes.find(item=>item.id===Number(cookButton.dataset.cook));
-    if(recipe) $("cookTitle").textContent=recipe.name;
-    openCookModal();
-    return;
-  }
-
-  const chip=event.target.closest(".chip");
-  if(chip){
-    document.querySelectorAll(".chip").forEach(item=>item.classList.remove("active"));
-    chip.classList.add("active");
-    currentFilter=chip.dataset.filter||"all";
-    renderRecipes();
-  }
-});
-
-recipeGrid.addEventListener("keydown",event=>{
-  if((event.key==="Enter" || event.key===" ") && !event.target.closest("button")){
-    const card=event.target.closest(".recipe-card");
-    if(!card) return;
-    event.preventDefault();
-    const recipe=recipes.find(item=>item.id===Number(card.dataset.recipe));
-    if(recipe) $("cookTitle").textContent=recipe.name;
-    openCookModal();
-  }
-});
-
-searchInput.addEventListener("input",renderRecipes);
-
-filterToggle.addEventListener("click",()=>{
-  const open=filterRow.classList.toggle("open");
-  filterToggle.querySelector("span").textContent=open?"−":"+";
-});
-
-$("joinChallenge").addEventListener("click",event=>{
-  const joined=localStorage.getItem("challengeJoined")==="true";
-
-  if(joined){
-    $("challengeStatus").textContent="You're already in. Your entry is waiting for you.";
-    event.currentTarget.textContent="You're in";
-    return;
-  }
-
-  localStorage.setItem("challengeJoined","true");
-  event.currentTarget.textContent="You're in";
-  $("challengeStatus").textContent="Challenge joined. Your first entry can be anything built around one familiar ingredient.";
-});
-
-let userPoints=Math.max(0,Number(safeStorage("communityCooksPoints",180))||180);
-
-function updateProgress(){
-  $("userPoints").textContent=userPoints+" pts";
-  $("progressBar").style.width=Math.min(100,Math.round(userPoints/250*100))+"%";
-
-  const remaining=Math.max(0,250-userPoints);
-  $("progressText").innerHTML=remaining
-    ? "<strong>"+remaining+" pts</strong> until you reach Home Cook."
-    : "Home Cook reached.";
-}
-
-$("cookNow").addEventListener("click",()=>{
-  $("cookTitle").textContent="Log a cook";
-  openCookModal();
-});
-
-$("closeCook").addEventListener("click",closeCookModal);
-
-$("finishCook").addEventListener("click",()=>{
-  userPoints+=30;
-  localStorage.setItem("communityCooksPoints",String(userPoints));
-  updateProgress();
-  closeCookModal();
-  $("progressMessage").textContent="+30 points. Cook logged.";
-});
-
-document.addEventListener("keydown",event=>{
-  if(event.key==="Escape"){
-    if(!recipeModal.hidden) closeRecipeModal();
-    if(!cookModal.hidden) closeCookModal();
-  }
-});
-
-if(localStorage.getItem("challengeJoined")==="true"){
-  $("joinChallenge").textContent="You're in";
-}
-
-renderRecipes();
-renderLeaderboard();
-updateProgress();
+$("searchInput")?.addEventListener("input",renderRecipes);
+$("joinChallenge")?.addEventListener("click",e=>{localStorage.setItem("ccChallenge","true");e.currentTarget.textContent="Joined";$("challengeStatus").textContent="Challenge joined. Now cook your version."});
+if($("joinChallenge")&&localStorage.getItem("ccChallenge")==="true")$("joinChallenge").textContent="Joined";
+$("logCook")?.addEventListener("click",()=>{const p=(Number(storage("ccPoints",0))||0)+30;localStorage.setItem("ccPoints",String(p));updateProgress(p);$("progressMessage").textContent="+30 points. Cook logged."});
+renderRecipes();renderRecipe();renderLeaderboard();
