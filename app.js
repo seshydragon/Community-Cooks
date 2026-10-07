@@ -45,7 +45,7 @@ async function loadRecipeLibrary(){
   const data=await response.json();
   if(Array.isArray(data)&&data.length) LIBRARY_RECIPES=data;
  }catch(error){ console.warn("Using built-in recipe library.",error); }
- renderRecipes(); renderSaved(); renderHistory(); renderPlanner?.();
+ renderRecipes(); renderSaved(); renderHistory(); renderRecipe(); window.renderPlanner?.();
 }
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
