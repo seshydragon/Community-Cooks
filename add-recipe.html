@@ -13,7 +13,7 @@
 <div class="form-grid">
 <label><span>Recipe name</span><input name="name" required maxlength="80" placeholder="e.g. Family Chicken Curry"></label>
 <label><span>Your name</span><input name="creator" maxlength="50" placeholder="e.g. Sesha"></label>
-<label><span>Cuisine</span><input name="cuisine" maxlength="40" placeholder="e.g. Indian"></label>
+<label><span>Meal type</span><select name="type" required><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner">Dinner</option><option value="snack">Snack</option><option value="drink">Drink</option><option value="dessert">Dessert</option></select></label><label><span>Cuisine</span><input name="cuisine" maxlength="40" placeholder="e.g. Indian"></label>
 <label><span>Time in minutes</span><input name="time" type="number" min="1" max="600" value="30" required></label>
 </div>
 <label><span>Short description</span><textarea name="description" rows="3" required maxlength="220" placeholder="What makes this recipe worth cooking?"></textarea></label>
