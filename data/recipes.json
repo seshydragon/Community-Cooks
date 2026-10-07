@@ -6574,19 +6574,16 @@
     "creator": "Community Cooks",
     "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
     "ingredients": [
-      "2 cups basmati rice",
-      "1 cup onion",
-      "1 cup garlic",
-      "1 cup ginger",
-      "1 cup tomato",
-      "1 cup garam masala"
+      "8 idlis",
+      "1 cup sambar",
+      "1/2 cup coconut chutney",
+      "2 tbsp chopped cilantro"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the aromatics over medium heat until fragrant.",
-      "Add the main ingredients and cook until tender and fully cooked.",
-      "Add the remaining ingredients and cook until combined.",
-      "Taste, adjust seasoning, and serve warm."
+      "Warm the idlis and sambar separately.",
+      "Place the idlis in a bowl and pour the hot sambar over them.",
+      "Add coconut chutney on the side.",
+      "Garnish with cilantro and serve hot."
     ]
   },
   {
@@ -6597,25 +6594,33 @@
     "cuisine": "Indian",
     "tags": [
       "breakfast",
-      "quick"
+      "quick",
+      "vegetarian",
+      "vegan",
+      "gluten-free"
     ],
-    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "description": "Savory Indian chickpea-flour pancakes with onion, tomato, cilantro, and warm spices.",
     "creator": "Community Cooks",
     "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
     "ingredients": [
-      "2 cups basmati rice",
-      "1 cup onion",
-      "1 cup garlic",
-      "1 cup ginger",
-      "1 cup tomato",
-      "1 cup garam masala"
+      "1 cup besan (chickpea flour)",
+      "3/4 cup water",
+      "1/4 cup finely diced onion",
+      "1/4 cup finely diced tomato",
+      "2 tbsp chopped cilantro",
+      "1/2 tsp cumin",
+      "1/4 tsp turmeric",
+      "1/4 tsp chili powder",
+      "1 tbsp oil",
+      "Salt"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the aromatics over medium heat until fragrant.",
-      "Add the main ingredients and cook until tender and fully cooked.",
-      "Add the remaining ingredients and cook until combined.",
-      "Taste, adjust seasoning, and serve warm."
+      "Whisk the besan, water, cumin, turmeric, chili powder, and salt until you have a smooth batter.",
+      "Stir in the diced onion, tomato, and cilantro.",
+      "Heat a nonstick skillet over medium heat and brush it with a little oil.",
+      "Pour about 1/3 cup batter into the skillet and spread it into a thin circle.",
+      "Cook for 2 to 3 minutes until the bottom is golden and the edges look set.",
+      "Flip and cook for another 1 to 2 minutes. Repeat with the remaining batter and serve hot."
     ]
   },
   {
@@ -10148,11 +10153,10 @@
       "Salt"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the vegetables or main ingredients until tender.",
-      "Combine the ingredients and season to taste.",
-      "Warm or finish cooking as needed.",
-      "Serve fresh."
+      "Warm the idlis according to their package or preparation method.",
+      "Blend the coconut, green chili, lemon juice, cilantro, salt, and a splash of water until smooth.",
+      "Transfer the chutney to a small bowl.",
+      "Serve the warm idlis with the coconut chutney."
     ]
   },
   {
@@ -10181,11 +10185,12 @@
       "Lemon juice"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the vegetables or main ingredients until tender.",
-      "Combine the ingredients and season to taste.",
-      "Warm or finish cooking as needed.",
-      "Serve fresh."
+      "Rinse the poha in a sieve until softened, then drain well.",
+      "Heat oil in a skillet and toast the mustard seeds until they begin to pop.",
+      "Add the onion and carrot and cook for 3 to 4 minutes.",
+      "Add the peas and cook until heated through.",
+      "Stir in the softened poha, peanuts, and salt and cook for 2 to 3 minutes.",
+      "Turn off the heat, squeeze over lemon juice, and serve."
     ]
   },
   {
