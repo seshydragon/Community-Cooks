@@ -7,13 +7,38 @@ function selectedMeals(){const m=[...document.querySelectorAll("[data-meal]:chec
 function recipeText(r){return ((r.name||"")+" "+(r.description||"")+" "+(r.ingredients||[]).join(" ")+" "+(r.tags||[]).join(" ")).toLowerCase()}
 function violates(r,prefs){const text=recipeText(r),tags=new Set(r.tags||[]);for(const p of prefs){if(p.startsWith("no-")&&avoidWords[p]?.some(w=>text.includes(w)))return true}if(prefs.includes("vegan")&&!tags.has("vegan"))return true;if(prefs.includes("vegetarian")&&!tags.has("vegetarian")&&!tags.has("vegan"))return true;if(prefs.includes("gluten-free")&&!tags.has("gluten-free"))return true;if(prefs.includes("dairy-free")&&!tags.has("dairy-free")&&!tags.has("vegan"))return true;const cuisines=["American","Italian","Mexican","Indian","Thai","Japanese","Korean","Mediterranean"];const wanted=prefs.filter(p=>cuisines.includes(p));if(wanted.length&&!wanted.includes(r.cuisine))return true;if(prefs.includes("high-protein")&&!tags.has("high-protein"))return true;if(prefs.includes("high-fiber")&&!tags.has("high-fiber"))return true;if(prefs.includes("protein-fiber")&&(!tags.has("high-protein")||!tags.has("high-fiber")))return true;return false}
 function scoreRecipe(r,prefs,meal,used){if(violates(r,prefs))return -1e6;const tags=new Set(r.tags||[]);let score=r.type===meal?40:0;prefs.forEach(p=>{if(tags.has(p))score+=12;if(p===r.cuisine)score+=18});if(prefs.includes("quick")&&Number(r.time)<=30)score+=8;if(prefs.includes("ultra-quick")&&Number(r.time)<=15)score+=10;if(prefs.includes("high-protein")&&tags.has("high-protein"))score+=20;if(prefs.includes("high-fiber")&&tags.has("high-fiber"))score+=20;if(prefs.includes("protein-fiber")&&tags.has("high-protein")&&tags.has("high-fiber"))score+=25;if(prefs.includes("meal-prep")&&tags.has("meal-prep"))score+=10;if(prefs.includes("one-pan")&&tags.has("one-pan"))score+=10;if(used.has(String(r.id)))score-=100;return score}
-function pickRecipe(pool,prefs,meal,used){let candidates=pool.filter(r=>!violates(r,prefs));if(!candidates.length){const strictNutrition=prefs.filter(p=>["high-protein","high-fiber","protein-fiber"].includes(p));candidates=pool.filter(r=>{const reduced=prefs.filter(p=>!strictNutrition.includes(p));return !violates(r,reduced)})}if(!candidates.length)candidates=pool.filter(r=>!used.has(String(r.id)));if(!candidates.length)return null;const ranked=candidates.map(r=>({r,s:scoreRecipe(r,prefs,meal,used)})).sort((a,b)=>b.s-a.s);const top=ranked.slice(0,Math.min(6,ranked.length));return top[Math.floor(Math.random()*top.length)].r}
-function buildPlan(){const prefs=selectedPreferences(),mealTypes=selectedMeals(),used=new Set(),plan={},library=allRecipes();for(const day of plannerDays)for(const mk of mealTypes){const meal=mk.charAt(0).toUpperCase()+mk.slice(1);let pool=library.filter(r=>r.type===meal);let r=pickRecipe(pool.length?pool:library,prefs,meal,used);if(!r)r=pickRecipe(library,prefs,meal,used);if(!r)r=library.find(x=>!used.has(String(x.id)))||library[0];if(r){plan[day+"-"+meal]=String(r.id);used.add(String(r.id))}}localStorage.setItem("ccMealPlan",JSON.stringify(plan));localStorage.setItem("ccMealPlanPrefs",JSON.stringify(prefs));localStorage.setItem("ccMealPlanMeals",JSON.stringify(mealTypes));renderPlanner();const m=document.getElementById("plannerMessage");if(m)m.textContent=Object.keys(plan).length?"Your plan is ready.":"No recipes are available yet."}
-function plannerOptions(){return allRecipes().map(r=>'<option value="'+escPlanner(r.id)+'">'+escPlanner(r.name)+"</option>").join("")}
-function renderPlanner(){const root=document.getElementById("plannerGrid");if(!root)return;let saved={};try{saved=JSON.parse(localStorage.getItem("ccMealPlan")||"{}")}catch{}const savedMeals=(()=>{try{return JSON.parse(localStorage.getItem("ccMealPlanMeals")||"[]")}catch{return[]}})();const keys=Object.keys(saved),meals=[...new Set(keys.map(k=>k.slice(k.indexOf("-")+1)))].filter(Boolean);const showMeals=meals.length?meals:savedMeals.length?savedMeals.map(x=>x.charAt(0).toUpperCase()+x.slice(1)):baseMeals;root.innerHTML=plannerDays.map(day=>'<article class="day-card"><h2>'+day+"</h2>"+showMeals.map(meal=>'<label><span>'+meal+'</span><select data-plan-key="'+day+"-"+meal+'"><option value="">Choose a recipe</option>'+plannerOptions()+"</select></label>").join("")+"</article>").join("");root.querySelectorAll("select").forEach(s=>s.value=saved[s.dataset.planKey]||"")}
-document.getElementById("generatePlan")?.addEventListener("click",buildPlan);
-document.getElementById("savePlan")?.addEventListener("click",()=>{const plan={};document.querySelectorAll("[data-plan-key]").forEach(s=>{if(s.value)plan[s.dataset.planKey]=s.value});localStorage.setItem("ccMealPlan",JSON.stringify(plan));const sig=JSON.stringify(plan),prev=localStorage.getItem("ccLastSavedPlan"),m=document.getElementById("plannerMessage");if(m)m.textContent="Meal plan saved.";if(sig!==prev&&window.awardPoints?.(20,"meal-plan-saved"))localStorage.setItem("ccLastSavedPlan",sig)});
-document.getElementById("clearPlan")?.addEventListener("click",()=>{localStorage.removeItem("ccMealPlan");renderPlanner();const m=document.getElementById("plannerMessage");if(m)m.textContent="Meal plan cleared."});
-document.querySelectorAll("[data-pref],[data-meal]").forEach(c=>c.addEventListener("change",()=>{localStorage.setItem("ccMealPlanPrefs",JSON.stringify(selectedPreferences()));localStorage.setItem("ccMealPlanMeals",JSON.stringify(selectedMeals()))}));
-try{const p=JSON.parse(localStorage.getItem("ccMealPlanPrefs")||"[]"),m=JSON.parse(localStorage.getItem("ccMealPlanMeals")||"[]");document.querySelectorAll("[data-pref]").forEach(c=>c.checked=p.includes(c.value));document.querySelectorAll("[data-meal]").forEach(c=>c.checked=m.includes(c.value))}catch{}
-renderPlanner();
+function pickRecipe(pool,prefs,meal,used){
+  const cuisines=["American","Italian","Mexican","Indian","Thai","Japanese","Korean","Mediterranean"];
+  const wantedCuisine=prefs.find(p=>cuisines.includes(p))||null;
+  const strictNutrition=["high-protein","high-fiber","protein-fiber"];
+  const strictCandidates=(source,relaxNutrition=false)=>{
+    return source.filter(r=>{
+      const reduced=relaxNutrition?prefs.filter(p=>!strictNutrition.includes(p)):prefs;
+      return !violates(r,reduced) && (!wantedCuisine || r.cuisine===wantedCuisine);
+    });
+  };
+
+  // Cuisine, diet, and allergy choices are NEVER relaxed.
+  let candidates=strictCandidates(pool);
+  if(!candidates.length) candidates=strictCandidates(pool,true);
+
+  // If the meal-type pool does not have a match, search the whole library,
+  // but still keep the selected cuisine/diet/allergy constraints.
+  if(!candidates.length){
+    const library=allRecipes();
+    candidates=strictCandidates(library);
+    if(!candidates.length) candidates=strictCandidates(library,true);
+  }
+
+  if(!candidates.length)return null;
+
+  // Prefer unused recipes, but if a cuisine has too few recipes for a full
+  // week, repeat a valid recipe rather than breaking the cuisine filter.
+  const unused=candidates.filter(r=>!used.has(String(r.id)));
+  const ranked=(unused.length?unused:candidates)
+    .map(r=>({r,s:scoreRecipe(r,prefs,meal,used)}))
+    .sort((a,b)=>b.s-a.s);
+
+  const top=ranked.slice(0,Math.min(6,ranked.length));
+  return top[Math.floor(Math.random()*top.length)].r;
+};
