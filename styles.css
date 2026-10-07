@@ -66,3 +66,15 @@
 
 /* Recipe metadata spacing */
 .recipe-meta{display:flex;align-items:center;gap:10px}.recipe-meta span+span:before{content:"·";margin-right:10px;color:var(--muted)}
+
+/* Meal planner preferences */
+.planner-preferences{display:grid;grid-template-columns:.8fr 1.7fr;gap:55px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:45px 0}
+.planner-preferences h2{font-family:Georgia,serif;font-size:42px;font-weight:400;line-height:1;margin:8px 0 12px}
+.planner-preferences p:not(.eyebrow){color:var(--muted);font-size:12px;line-height:1.7;max-width:360px}
+.preference-groups{display:grid;grid-template-columns:1fr 1.3fr .9fr;gap:35px}
+.preference-groups>div{display:flex;flex-direction:column;gap:11px}
+.preference-groups strong{font-family:Georgia,serif;font-size:20px;font-weight:400;margin-bottom:5px;color:#fff}
+.preference-groups label{display:flex;align-items:center;gap:8px;color:#9cafc2;font-size:11px;cursor:pointer}
+.preference-groups input{accent-color:var(--blue);width:14px;height:14px}
+@media(max-width:900px){.planner-preferences{grid-template-columns:1fr;gap:30px}.preference-groups{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.preference-groups{grid-template-columns:1fr}.planner-preferences h2{font-size:36px}}
