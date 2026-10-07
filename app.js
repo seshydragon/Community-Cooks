@@ -71,7 +71,7 @@ function imageFallback(img,type){
 }
 
 function recipeCard(r){
- return '<article class="recipe-card"><a href="recipe.html?id='+encodeURIComponent(r.id)+'"><div class="recipe-image"><img src="'+esc(recipeImage(r))+'" alt="'+esc(r.name)+'" loading="lazy" onerror="imageFallback(this, this.dataset.type)" data-type="recipe-type" ></div><div class="recipe-card-body"><div class="recipe-meta"><span>'+esc(r.type)+'</span><span>'+r.time+' min</span></div><h2>'+esc(r.name)+'</h2><p>'+esc(r.description)+'</p><div class="recipe-footer"><span>By '+esc(r.creator||"Community Cooks")+'</span><button type="button" class="save-button" data-save="'+esc(r.id)+'">'+(isSaved(r.id)?"Saved":"Save")+'</button></div></div></a></article>';
+ return '<article class="recipe-card"><a href="recipe.html?id='+encodeURIComponent(r.id)+'"><div class="recipe-image"><img src="'+esc(recipeImage(r))+'" alt="'+esc(r.name)+'" loading="lazy" onerror="imageFallback(this, this.dataset.type)" data-type="${esc(r.type.toLowerCase())}" ></div><div class="recipe-card-body"><div class="recipe-meta"><span>'+esc(r.type)+'</span><span>'+r.time+' min</span></div><h2>'+esc(r.name)+'</h2><p>'+esc(r.description)+'</p><div class="recipe-footer"><span>By '+esc(r.creator||"Community Cooks")+'</span><button type="button" class="save-button" data-save="'+esc(r.id)+'">'+(isSaved(r.id)?"Saved":"Save")+'</button></div></div></a></article>';
 }
 function isSaved(id){return storage("ccSaved",[]).map(String).includes(String(id))}
 function toggleSaved(id){
