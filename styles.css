@@ -80,3 +80,12 @@
 @media(max-width:620px){.preference-groups{grid-template-columns:1fr}.planner-preferences h2{font-size:36px}}
 
 .planner-builder .preference-groups{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.planner-builder .preference-groups>div{border-top:1px solid var(--line);padding-top:18px}.planner-builder label{display:block;margin:9px 0;color:var(--text)}.planner-builder input{margin-right:8px;accent-color:var(--blue)}@media(max-width:900px){.planner-builder .preference-groups{grid-template-columns:1fr 1fr}}@media(max-width:600px){.planner-builder .preference-groups{grid-template-columns:1fr}}
+/* Compact planner filters */
+.compact-preferences{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 28px}
+.compact-preferences>div{min-width:0}
+.compact-preferences select{width:100%;min-height:44px;background:#091522;border:1px solid #263c55;color:#dceaff;padding:10px 12px;border-radius:0;font-size:11px;outline:none}
+.compact-preferences select:focus{border-color:var(--blue);outline:1px solid var(--blue)}
+.meal-checkboxes{display:grid;gap:8px}
+.meal-checkboxes label{display:block!important;margin:0!important}
+@media(max-width:900px){.compact-preferences{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.compact-preferences{grid-template-columns:1fr}}
