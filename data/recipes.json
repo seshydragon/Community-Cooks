@@ -6471,5 +6471,3467 @@
       "Stir in the smoky paprika ingredients and cook for 1 to 2 minutes.",
       "Serve over the noodles and season to taste."
     ]
+  },
+  {
+    "id": 201,
+    "name": "Masala Omelet Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Poha Breakfast Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Aloo Paratha",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Idli Sambar Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Besan Chilla",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast",
+      "quick"
+    ],
+    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Chana Masala Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A indian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Paneer Tikka Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A indian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Rajma Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A indian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Vegetable Biryani Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A indian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Dal Tadka Lunch Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "description": "A indian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Palak Paneer",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Indian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A indian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Butter Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Indian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A indian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Chicken Korma",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Indian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A indian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Dal Makhani",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Indian",
+    "tags": [
+      "dinner"
+    ],
+    "description": "A indian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Vegetable Kofta Curry",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Indian",
+    "tags": [
+      "dinner",
+      "quick"
+    ],
+    "description": "A indian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups basmati rice",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup tomato",
+      "1 cup garam masala"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Ricotta Berry Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A italian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Italian Breakfast Frittata",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A italian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Tomato Basil Egg Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A italian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Caprese Breakfast Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A italian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Mushroom Parmesan Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A italian breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Chicken Pesto Panini",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Italian",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A italian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Pasta Primavera",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Italian",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A italian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Italian Chopped Salad",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Italian",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A italian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Turkey Pesto Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Italian",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A italian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Tomato Mozzarella Pasta",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Italian",
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "description": "A italian lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Chicken Parmesan",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Italian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A italian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Penne Arrabbiata",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Italian",
+    "tags": [
+      "dinner"
+    ],
+    "description": "A italian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Mushroom Risotto",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Italian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A italian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Chicken Piccata",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Italian",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A italian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Eggplant Parmesan",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Italian",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A italian dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups pasta",
+      "1 cup tomato",
+      "1 cup garlic",
+      "1 cup basil",
+      "1 cup olive oil",
+      "1 cup parmesan"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Huevos Rancheros Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mexican breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Breakfast Quesadilla",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mexican breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Chorizo Potato Hash",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mexican breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Black Bean Breakfast Tacos",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A mexican breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 235,
+    "name": "Mexican Egg Scramble",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A mexican breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Chicken Burrito Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mexican",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mexican lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Turkey Taco Salad",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mexican",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mexican lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Chicken Fajita Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mexican",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mexican lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Black Bean Enchilada Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mexican",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mexican lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Street Corn Chicken Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mexican",
+    "tags": [
+      "lunch",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A mexican lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Chicken Enchiladas",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mexican",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mexican dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Beef Tacos",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mexican",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mexican dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Chicken Fajitas",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mexican",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mexican dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Turkey Chili",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mexican",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mexican dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Black Bean Tostadas",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mexican",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A mexican dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black beans",
+      "1 cup tomato",
+      "1 cup onion",
+      "1 cup lime",
+      "1 cup cumin"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Thai Coconut Oatmeal",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Thai",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A thai breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Thai Basil Egg Rice",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Thai",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A thai breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Mango Coconut Yogurt Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Thai",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A thai breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Peanut Banana Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Thai",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A thai breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Pineapple Rice Breakfast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Thai",
+    "tags": [
+      "breakfast",
+      "quick"
+    ],
+    "description": "A thai breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Thai Chicken Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Thai",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A thai lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Tofu Pad See Ew",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Thai",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A thai lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Thai Beef Salad",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Thai",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A thai lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Coconut Curry Noodle Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Thai",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A thai lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Chicken Lettuce Cups",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Thai",
+    "tags": [
+      "lunch",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A thai lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Green Curry Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Thai",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A thai dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Thai Basil Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Thai",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A thai dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Red Curry Vegetables",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Thai",
+    "tags": [
+      "dinner"
+    ],
+    "description": "A thai dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Tom Kha Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Thai",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A thai dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Cashew Chicken Stir-Fry",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Thai",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A thai dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups jasmine rice",
+      "1 cup garlic",
+      "1 cup ginger",
+      "1 cup lime",
+      "1 cup coconut milk",
+      "1 cup basil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 261,
+    "name": "Miso Egg Rice Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Japanese",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A japanese breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 262,
+    "name": "Japanese Pancake Breakfast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Japanese",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A japanese breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Salmon Rice Breakfast Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Japanese",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A japanese breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 264,
+    "name": "Tofu Breakfast Rice",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Japanese",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A japanese breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Tamago Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Japanese",
+    "tags": [
+      "breakfast",
+      "quick"
+    ],
+    "description": "A japanese breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Chicken Teriyaki Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Japanese",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A japanese lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Salmon Sushi Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Japanese",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A japanese lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Chicken Katsu Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Japanese",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A japanese lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Vegetable Yakisoba",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Japanese",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A japanese lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 270,
+    "name": "Beef Yaki Udon",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Japanese",
+    "tags": [
+      "lunch",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A japanese lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 271,
+    "name": "Chicken Yakitori Bowl",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Japanese",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A japanese dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Salmon Teriyaki",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Japanese",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A japanese dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 273,
+    "name": "Beef Sukiyaki",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Japanese",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A japanese dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 274,
+    "name": "Chicken Katsu Curry",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Japanese",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A japanese dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 275,
+    "name": "Miso Glazed Cod",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Japanese",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A japanese dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup soy sauce",
+      "1 cup ginger",
+      "1 cup scallion",
+      "1 cup sesame",
+      "1 cup nori"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 276,
+    "name": "Korean Egg Rice Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Korean",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A korean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Kimchi Breakfast Fried Rice",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Korean",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A korean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Gochujang Egg Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Korean",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A korean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Beef Breakfast Bibimbap",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Korean",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A korean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 280,
+    "name": "Tofu Rice Breakfast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Korean",
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A korean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Bulgogi Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Korean",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A korean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Bibimbap Lunch Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Korean",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A korean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Korean Chicken Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Korean",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A korean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Kimchi Fried Rice",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Korean",
+    "tags": [
+      "lunch"
+    ],
+    "description": "A korean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 285,
+    "name": "Beef Japchae Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Korean",
+    "tags": [
+      "lunch",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A korean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Korean BBQ Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Korean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A korean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Beef Bulgogi Bowl",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Korean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A korean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 288,
+    "name": "Dakgalbi Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Korean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A korean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Spicy Tofu Stew",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Korean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A korean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Korean Beef Lettuce Wraps",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Korean",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A korean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup gochujang",
+      "1 cup garlic",
+      "1 cup scallion",
+      "1 cup sesame oil",
+      "1 cup kimchi"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Greek Yogurt Fruit Bowl",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Mediterranean Egg Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 293,
+    "name": "Spinach Feta Omelet",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 294,
+    "name": "Hummus Breakfast Plate",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 295,
+    "name": "Tomato Feta Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "breakfast",
+      "quick"
+    ],
+    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 296,
+    "name": "Greek Chicken Pita",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mediterranean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 297,
+    "name": "Mediterranean Chickpea Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mediterranean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 298,
+    "name": "Chicken Hummus Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mediterranean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Tuna Greek Salad",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A mediterranean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Falafel Grain Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "description": "A mediterranean lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 301,
+    "name": "Lemon Herb Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mediterranean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Greek Turkey Meatballs",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mediterranean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Mediterranean Salmon",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mediterranean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 304,
+    "name": "Chicken Souvlaki",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A mediterranean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 305,
+    "name": "Lentil Vegetable Stew",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "Mediterranean",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A mediterranean dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 cup tomato",
+      "1 cup cucumber",
+      "1 cup lemon",
+      "1 cup olive oil",
+      "1 cup parsley"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 306,
+    "name": "Blueberry Oat Pancakes",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "American",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A american breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 307,
+    "name": "Turkey Egg Breakfast Sandwich",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A american breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Peanut Butter Banana Oatmeal",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "American",
+    "tags": [
+      "breakfast"
+    ],
+    "description": "A american breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 309,
+    "name": "Veggie Breakfast Burrito",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "high-protein"
+    ],
+    "description": "A american breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Apple Cinnamon French Toast",
+    "type": "Breakfast",
+    "time": 15,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "quick"
+    ],
+    "description": "A american breakfast with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 311,
+    "name": "Turkey Avocado Sandwich",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A american lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 312,
+    "name": "Chicken Ranch Wrap",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A american lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 313,
+    "name": "Grilled Chicken Salad",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A american lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 314,
+    "name": "Turkey Club Sandwich",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "lunch",
+      "high-protein"
+    ],
+    "description": "A american lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 315,
+    "name": "BBQ Chicken Rice Bowl",
+    "type": "Lunch",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "lunch",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A american lunch with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 316,
+    "name": "Herb Roasted Chicken",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "American",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A american dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 317,
+    "name": "Turkey Meatloaf",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "American",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A american dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 318,
+    "name": "Chicken Pot Pie",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "American",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A american dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 319,
+    "name": "Beef Cheeseburger Bowl",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "American",
+    "tags": [
+      "dinner",
+      "high-protein"
+    ],
+    "description": "A american dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 320,
+    "name": "Garlic Butter Salmon",
+    "type": "Dinner",
+    "time": 35,
+    "cuisine": "American",
+    "tags": [
+      "dinner",
+      "high-protein",
+      "quick"
+    ],
+    "description": "A american dinner with practical ingredients and straightforward preparation.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups potatoes",
+      "1 cup onion",
+      "1 cup garlic",
+      "1 cup cheddar",
+      "1 cup olive oil",
+      "1 cup herbs"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the aromatics over medium heat until fragrant.",
+      "Add the main ingredients and cook until tender and fully cooked.",
+      "Add the remaining ingredients and cook until combined.",
+      "Taste, adjust seasoning, and serve warm."
+    ]
   }
 ]
