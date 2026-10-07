@@ -1,56 +1,19 @@
 const plannerDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const plannerMeals=["Breakfast","Lunch","Dinner"];
+const baseMeals=["Breakfast","Lunch","Dinner"];
+const avoidWords={"no-peanuts":["peanut"],"no-tree-nuts":["almond","cashew","walnut","pecan","pistachio","hazelnut"],"no-eggs":["egg"],"no-soy":["soy","tofu","edamame","miso"],"no-shellfish":["shrimp","prawn","crab","lobster","shellfish"],"no-sesame":["sesame","tahini"]};
 function escPlanner(v){return String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function sanitizePlannerPoints(){try{const raw=Number(localStorage.getItem("ccPoints")||0);if(!Number.isFinite(raw)||raw<0||raw>1000){localStorage.setItem("ccPoints","0");localStorage.removeItem("ccPointRewards");localStorage.removeItem("ccLastSavedPlan");}}catch{}}\nsanitizePlannerPoints();\nfunction selectedPreferences(){return [...document.querySelectorAll("[data-pref]:checked")].map(x=>x.value)}
-function scoreRecipe(r,prefs,meal){
- const tags=new Set(r.tags||[]); let score=0;
- prefs.forEach(p=>{if(tags.has(p))score+=5;});
- if(meal==="Breakfast"&&r.type==="Breakfast")score+=20;
- if(meal==="Lunch"&&r.type==="Lunch")score+=20;
- if(meal==="Dinner"&&r.type==="Dinner")score+=20;
- if(meal==="Snack"&&r.type==="Snack")score+=20;
- if(prefs.includes("quick")&&r.time<30)score+=4;
- if(prefs.includes("meal-prep")&&r.tags?.includes("meal-prep"))score+=6;
- return score;
-}
-function pickRecipe(pool,prefs,meal,used){
- const candidates=pool.filter(r=>!used.has(String(r.id))&&scoreRecipe(r,prefs,meal)>0);
- const source=candidates.length?candidates:pool.filter(r=>!used.has(String(r.id)));
- source.sort((a,b)=>scoreRecipe(b,prefs,meal)-scoreRecipe(a,prefs,meal));
- return source[Math.floor(Math.random()*Math.min(source.length,8))]||pool[0];
-}
-function buildPlan(){
- const prefs=selectedPreferences(), used=new Set(), plan={};
- for(const day of plannerDays){
-  for(const meal of plannerMeals){
-   const desired=meal;
-   const pool=allRecipes().filter(r=>r.type===desired);
-   const fallback=pool.length?pool:allRecipes();
-   const r=pickRecipe(fallback,prefs,meal,used);
-   if(r){plan[day+"-"+meal]=String(r.id);used.add(String(r.id));}
-  }
- }
- localStorage.setItem("ccMealPlan",JSON.stringify(plan));
- localStorage.setItem("ccMealPlanPrefs",JSON.stringify(prefs));
- renderPlanner();
- const message=document.getElementById("plannerMessage"); if(message)message.textContent="Your seven-day plan is ready.";
-}
+function selectedPreferences(){return [...document.querySelectorAll("[data-pref]:checked")].map(x=>x.value)}
+function selectedMeals(){const m=[...document.querySelectorAll("[data-meal]:checked")].map(x=>x.value);return m.length?m:baseMeals.map(x=>x.toLowerCase())}
+function recipeText(r){return ((r.name||"")+" "+(r.description||"")+" "+(r.ingredients||[]).join(" ")+" "+(r.tags||[]).join(" ")).toLowerCase()}
+function violates(r,prefs){const text=recipeText(r),tags=new Set(r.tags||[]);for(const p of prefs){if(p.startsWith("no-")&&avoidWords[p]?.some(w=>text.includes(w)))return true}if(prefs.includes("vegan")&&!tags.has("vegan"))return true;if(prefs.includes("vegetarian")&&!tags.has("vegetarian")&&!tags.has("vegan"))return true;if(prefs.includes("gluten-free")&&!tags.has("gluten-free"))return true;if(prefs.includes("dairy-free")&&!tags.has("dairy-free")&&!tags.has("vegan"))return true;return false}
+function scoreRecipe(r,prefs,meal,used){if(violates(r,prefs))return -1e6;const tags=new Set(r.tags||[]);let score=r.type===meal?40:0;prefs.forEach(p=>{if(tags.has(p))score+=12;if(p===r.cuisine)score+=18});if(prefs.includes("quick")&&Number(r.time)<=30)score+=8;if(prefs.includes("ultra-quick")&&Number(r.time)<=15)score+=10;if(prefs.includes("meal-prep")&&tags.has("meal-prep"))score+=10;if(prefs.includes("one-pan")&&tags.has("one-pan"))score+=10;if(used.has(String(r.id)))score-=100;return score}
+function pickRecipe(pool,prefs,meal,used){const ranked=pool.filter(r=>!violates(r,prefs)).map(r=>({r,s:scoreRecipe(r,prefs,meal,used)})).sort((a,b)=>b.s-a.s);if(!ranked.length)return null;const top=ranked.slice(0,Math.min(6,ranked.length));return top[Math.floor(Math.random()*top.length)].r}
+function buildPlan(){const prefs=selectedPreferences(),mealTypes=selectedMeals(),used=new Set(),plan={},library=allRecipes();for(const day of plannerDays)for(const mk of mealTypes){const meal=mk.charAt(0).toUpperCase()+mk.slice(1),pool=library.filter(r=>r.type===meal),r=pickRecipe(pool.length?pool:library,prefs,meal,used);if(r){plan[day+"-"+meal]=String(r.id);used.add(String(r.id))}}localStorage.setItem("ccMealPlan",JSON.stringify(plan));localStorage.setItem("ccMealPlanPrefs",JSON.stringify(prefs));localStorage.setItem("ccMealPlanMeals",JSON.stringify(mealTypes));renderPlanner();const m=document.getElementById("plannerMessage");if(m)m.textContent="Your plan is ready."}
 function plannerOptions(){return allRecipes().map(r=>'<option value="'+escPlanner(r.id)+'">'+escPlanner(r.name)+"</option>").join("")}
-function renderPlanner(){
- const root=document.getElementById("plannerGrid");if(!root)return;
- let saved={};try{saved=JSON.parse(localStorage.getItem("ccMealPlan")||"{}")}catch{}
- root.innerHTML=plannerDays.map(day=>'<article class="day-card"><h2>'+day+"</h2>"+plannerMeals.map(meal=>{const key=day+"-"+meal;return '<label><span>'+meal+'</span><select data-plan-key="'+key+'"><option value="">Choose a recipe</option>'+plannerOptions()+"</select></label>"}).join("")+"</article>").join("");
- root.querySelectorAll("select").forEach(s=>s.value=saved[s.dataset.planKey]||"");
-}
+function renderPlanner(){const root=document.getElementById("plannerGrid");if(!root)return;let saved={};try{saved=JSON.parse(localStorage.getItem("ccMealPlan")||"{}")}catch{}const keys=Object.keys(saved),meals=[...new Set(keys.map(k=>k.split("-").slice(1).join("-")))].filter(Boolean);const showMeals=meals.length?meals:baseMeals;root.innerHTML=plannerDays.map(day=>'<article class="day-card"><h2>'+day+"</h2>"+showMeals.map(meal=>'<label><span>'+meal+'</span><select data-plan-key="'+day+"-"+meal+'"><option value="">Choose a recipe</option>'+plannerOptions()+"</select></label>").join("")+"</article>").join("");root.querySelectorAll("select").forEach(s=>s.value=saved[s.dataset.planKey]||"")}
 document.getElementById("generatePlan")?.addEventListener("click",buildPlan);
-document.getElementById("savePlan")?.addEventListener("click",()=>{
- const plan={};document.querySelectorAll("[data-plan-key]").forEach(s=>plan[s.dataset.planKey]=s.value);
- localStorage.setItem("ccMealPlan",JSON.stringify(plan));
- const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan saved. +20 points.";
- const signature=JSON.stringify(plan);const previous=localStorage.getItem("ccLastSavedPlan");
- if(signature!==previous){if(window.awardPoints?.(20,"meal-plan-saved")){localStorage.setItem("ccLastSavedPlan",signature);}}
-});
-document.getElementById("clearPlan")?.addEventListener("click",()=>{localStorage.removeItem("ccMealPlan");renderPlanner();const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan cleared."});
-document.querySelectorAll("[data-pref]").forEach(c=>c.addEventListener("change",()=>{localStorage.setItem("ccMealPlanPrefs",JSON.stringify(selectedPreferences()))}));
-try{const savedPrefs=JSON.parse(localStorage.getItem("ccMealPlanPrefs")||"[]");document.querySelectorAll("[data-pref]").forEach(c=>c.checked=savedPrefs.includes(c.value))}catch{}
+document.getElementById("savePlan")?.addEventListener("click",()=>{const plan={};document.querySelectorAll("[data-plan-key]").forEach(s=>{if(s.value)plan[s.dataset.planKey]=s.value});localStorage.setItem("ccMealPlan",JSON.stringify(plan));const sig=JSON.stringify(plan),prev=localStorage.getItem("ccLastSavedPlan"),m=document.getElementById("plannerMessage");if(m)m.textContent="Meal plan saved.";if(sig!==prev&&window.awardPoints?.(20,"meal-plan-saved"))localStorage.setItem("ccLastSavedPlan",sig)});
+document.getElementById("clearPlan")?.addEventListener("click",()=>{localStorage.removeItem("ccMealPlan");renderPlanner();const m=document.getElementById("plannerMessage");if(m)m.textContent="Meal plan cleared."});
+document.querySelectorAll("[data-pref],[data-meal]").forEach(c=>c.addEventListener("change",()=>{localStorage.setItem("ccMealPlanPrefs",JSON.stringify(selectedPreferences()));localStorage.setItem("ccMealPlanMeals",JSON.stringify(selectedMeals()))}));
+try{const p=JSON.parse(localStorage.getItem("ccMealPlanPrefs")||"[]"),m=JSON.parse(localStorage.getItem("ccMealPlanMeals")||"[]");document.querySelectorAll("[data-pref]").forEach(c=>c.checked=p.includes(c.value));document.querySelectorAll("[data-meal]").forEach(c=>c.checked=m.includes(c.value))}catch{}
 renderPlanner();
