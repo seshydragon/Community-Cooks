@@ -55,7 +55,15 @@ function getUserRecipes(){return storage("ccRecipes",[])}
 function allRecipes(){return [...LIBRARY_RECIPES,...getUserRecipes()]}
 function findRecipe(id){return allRecipes().find(r=>String(r.id)===String(id))}
 function points(){return Number(localStorage.getItem("ccPoints")||0)}
-function addPoints(amount,reason){const next=points()+amount;localStorage.setItem("ccPoints",String(next));return next}
+function awardPoints(amount,key){
+ const claimed=storage("ccPointRewards",{});
+ if(claimed[key]) return false;
+ claimed[key]=new Date().toISOString();
+ setStorage("ccPointRewards",claimed);
+ localStorage.setItem("ccPoints",String(points()+amount));
+ return true;
+}
+function addPoints(amount,reason){return awardPoints(amount,reason+"-"+Date.now())?points():points()}
 function recipeImage(r){return r.image||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"}
 function imageFallback(img,type){
  const fallbacks={Breakfast:"https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1200&q=85",Lunch:"https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=85",Snack:"https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",Drink:"https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1200&q=85",Dessert:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=85",Dinner:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=85"};
@@ -111,7 +119,9 @@ function renderHistory(){
 function logCook(id){
  const history=storage("ccHistory",[]);
  history.unshift({id,date:new Date().toLocaleDateString()});
- setStorage("ccHistory",history.slice(0,50)); addPoints(30,"cook"); return history;
+ setStorage("ccHistory",history.slice(0,50));
+ awardPoints(30,"cook-"+String(id));
+ return history;
 }
 function saveRecipeForm(){
  const form=$("recipeForm"); if(!form)return;
@@ -121,7 +131,7 @@ function saveRecipeForm(){
    const selected=[...form.querySelector('[name="category"]').selectedOptions].map(o=>o.value);
    const type=String(data.get("type")); const image=String(data.get("image")||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85");
    const recipe={id,name:String(data.get("name")).trim(),creator:String(data.get("creator")||"Community Cook").trim(),type:type[0].toUpperCase()+type.slice(1),time:Number(data.get("time")),cuisine:String(data.get("cuisine")||"Homemade"),description:String(data.get("description")).trim(),image,tags:[type,...selected],ingredients:String(data.get("ingredients")).split(/\n+/).map(x=>x.trim()).filter(Boolean),steps:String(data.get("steps")).split(/\n+/).map(x=>x.trim()).filter(Boolean)};
-   setStorage("ccRecipes",[...getUserRecipes(),recipe]); addPoints(50,"recipe");
+   setStorage("ccRecipes",[...getUserRecipes(),recipe]); awardPoints(50,"recipe-"+id);
    const msg=form.querySelector(".form-message"); if(msg)msg.textContent="Recipe saved. +50 points.";
    form.reset();
  });
@@ -134,7 +144,7 @@ function initChallenge(){
  $("joinChallenge")?.addEventListener("click",()=>{
    if(localStorage.getItem("ccChallengeComplete")==="1"){ $("challengeStatus").textContent="Challenge already completed."; return}
    localStorage.setItem("ccChallengeJoined","1"); $("challengeStatus").textContent="You're in. Cook your version, then mark it complete.";
-   const b=$("joinChallenge");b.textContent="Mark challenge complete";b.onclick=()=>{localStorage.setItem("ccChallengeComplete","1");addPoints(75,"challenge");$("challengeStatus").textContent="Challenge complete. +75 points.";b.disabled=true;b.textContent="Completed"};
+   const b=$("joinChallenge");b.textContent="Mark challenge complete";b.onclick=()=>{localStorage.setItem("ccChallengeComplete","1");awardPoints(75,"challenge-week-1");$("challengeStatus").textContent="Challenge complete. +75 points.";b.disabled=true;b.textContent="Completed"};
  });
  if(localStorage.getItem("ccChallengeComplete")==="1"){const b=$("joinChallenge");if(b){b.disabled=true;b.textContent="Completed"}}
 }
@@ -144,5 +154,5 @@ function initLeaderboard(){
  const text=$("progressText"); if(text)text.textContent=Math.max(0,250-points())+" points to the next milestone.";
  $("logCook")?.addEventListener("click",()=>{addPoints(30,"cook");initLeaderboard();$("progressMessage").textContent="Cook logged. +30 points."});
 }
-window.RECIPES=RECIPES; window.allRecipes=allRecipes; window.findRecipe=findRecipe; window.recipeImage=recipeImage; window.addPoints=addPoints; window.points=points; window.logCook=logCook; window.storage=storage; window.setStorage=setStorage;
+window.RECIPES=RECIPES; window.allRecipes=allRecipes; window.findRecipe=findRecipe; window.recipeImage=recipeImage; window.addPoints=addPoints; window.awardPoints=awardPoints; window.points=points; window.logCook=logCook; window.storage=storage; window.setStorage=setStorage;
 document.addEventListener("DOMContentLoaded",()=>{renderRecipe();saveRecipeForm();initFilters();initChallenge();initLeaderboard();loadRecipeLibrary()});
