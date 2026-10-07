@@ -6474,30 +6474,35 @@
   },
   {
     "id": 201,
-    "name": "Masala Omelet Toast",
+    "name": "Masala Veggie Omelet Toast",
     "type": "Breakfast",
     "time": 15,
     "cuisine": "Indian",
     "tags": [
-      "breakfast"
+      "breakfast",
+      "vegetarian",
+      "quick"
     ],
-    "description": "A indian breakfast with practical ingredients and straightforward preparation.",
+    "description": "Indian-style omelet with onion, tomato, spinach, and warm spices over toast.",
     "creator": "Community Cooks",
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
     "ingredients": [
-      "2 cups basmati rice",
-      "1 cup onion",
-      "1 cup garlic",
-      "1 cup ginger",
-      "1 cup tomato",
-      "1 cup garam masala"
+      "2 eggs",
+      "1 slice whole-grain toast",
+      "1/4 cup diced onion",
+      "1/4 cup diced tomato",
+      "1/2 cup spinach",
+      "1/4 tsp turmeric",
+      "1/4 tsp cumin",
+      "1 tsp olive oil",
+      "Salt and pepper"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the aromatics over medium heat until fragrant.",
-      "Add the main ingredients and cook until tender and fully cooked.",
-      "Add the remaining ingredients and cook until combined.",
-      "Taste, adjust seasoning, and serve warm."
+      "Toast the bread until crisp.",
+      "Whisk eggs with turmeric, cumin, salt, and pepper.",
+      "Cook onion and tomato in olive oil for 2 minutes.",
+      "Add spinach, then pour in the eggs and cook until set.",
+      "Fold the omelet and serve over the toast."
     ]
   },
   {
@@ -9130,25 +9135,27 @@
     "time": 15,
     "cuisine": "Mediterranean",
     "tags": [
-      "breakfast"
+      "breakfast",
+      "vegetarian",
+      "quick"
     ],
-    "description": "A mediterranean breakfast with practical ingredients and straightforward preparation.",
+    "description": "A simple Mediterranean omelet with spinach, tomato, herbs, and feta.",
     "creator": "Community Cooks",
     "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
     "ingredients": [
-      "2 cups chickpeas",
-      "1 cup tomato",
-      "1 cup cucumber",
-      "1 cup lemon",
-      "1 cup olive oil",
-      "1 cup parsley"
+      "2 eggs",
+      "1 cup baby spinach",
+      "1/4 cup diced tomato",
+      "2 tbsp crumbled feta",
+      "1 tsp olive oil",
+      "1 tbsp chopped parsley",
+      "Salt and pepper"
     ],
     "steps": [
-      "Prepare and chop the ingredients.",
-      "Cook the aromatics over medium heat until fragrant.",
-      "Add the main ingredients and cook until tender and fully cooked.",
-      "Add the remaining ingredients and cook until combined.",
-      "Taste, adjust seasoning, and serve warm."
+      "Whisk the eggs with salt and pepper.",
+      "Wilt the spinach and tomato in olive oil.",
+      "Pour in the eggs and cook until nearly set.",
+      "Sprinkle with feta and parsley, fold, and finish cooking."
     ]
   },
   {
@@ -9932,6 +9939,375 @@
       "Add the main ingredients and cook until tender and fully cooked.",
       "Add the remaining ingredients and cook until combined.",
       "Taste, adjust seasoning, and serve warm."
+    ]
+  },
+  {
+    "id": 321,
+    "name": "Avocado Chickpea Toast",
+    "type": "Breakfast",
+    "time": 12,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick",
+      "budget"
+    ],
+    "description": "Vegan Avocado toast topped with lemony chickpeas, tomato, and herbs.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1/2 avocado",
+      "1/2 cup chickpeas",
+      "1 tsp lemon juice",
+      "1/4 cup diced tomato",
+      "Parsley",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 322,
+    "name": "Berry Chia Pudding",
+    "type": "Breakfast",
+    "time": 10,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick"
+    ],
+    "description": "Vegan chia pudding layered with berries and banana.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1/4 cup chia seeds",
+      "1 cup oat milk",
+      "1/2 cup berries",
+      "1/2 banana",
+      "1 tsp maple syrup"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 323,
+    "name": "Tofu Veggie Scramble",
+    "type": "Breakfast",
+    "time": 18,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick",
+      "high-protein"
+    ],
+    "description": "Vegan tofu scramble with spinach, peppers, onion, and turmeric.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "8 oz firm tofu",
+      "1/2 bell pepper",
+      "1/4 onion",
+      "1 cup spinach",
+      "1/4 tsp turmeric",
+      "1 tsp olive oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 324,
+    "name": "Peanut Butter Banana Oats",
+    "type": "Breakfast",
+    "time": 8,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick",
+      "budget"
+    ],
+    "description": "Vegan overnight oats with banana, peanut butter, and cinnamon.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup rolled oats",
+      "1 cup oat milk",
+      "1 banana",
+      "1 tbsp peanut butter",
+      "1/2 tsp cinnamon"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 325,
+    "name": "Black Bean Breakfast Tacos",
+    "type": "Breakfast",
+    "time": 20,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "budget"
+    ],
+    "description": "Vegetarian breakfast tacos with black beans, eggs, avocado, and salsa.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "4 corn tortillas",
+      "3 eggs",
+      "1/2 cup black beans",
+      "1/2 avocado",
+      "1/4 cup salsa",
+      "Cilantro"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 326,
+    "name": "Potato Pepper Hash",
+    "type": "Breakfast",
+    "time": 25,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "budget"
+    ],
+    "description": "Vegan skillet hash with potatoes, peppers, onions, and paprika.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 medium potatoes",
+      "1 bell pepper",
+      "1/2 onion",
+      "1 tbsp olive oil",
+      "1/2 tsp paprika",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 327,
+    "name": "Idli Coconut Chutney Plate",
+    "type": "Breakfast",
+    "time": 25,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "gluten-free"
+    ],
+    "description": "Steamed rice cakes served with coconut chutney and fresh herbs.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "6 idli",
+      "1/2 cup grated coconut",
+      "1 green chili",
+      "1 tbsp lemon juice",
+      "Cilantro",
+      "Salt"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 328,
+    "name": "Vegetable Poha",
+    "type": "Breakfast",
+    "time": 20,
+    "cuisine": "Indian",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "gluten-free",
+      "budget"
+    ],
+    "description": "Indian flattened rice cooked with peas, carrots, onion, and peanuts.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 1/2 cups poha",
+      "1/2 cup peas",
+      "1/2 cup diced carrot",
+      "1/2 onion",
+      "2 tbsp peanuts",
+      "1 tsp mustard seeds",
+      "1 tsp oil",
+      "Lemon juice"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 329,
+    "name": "Mushroom Spinach Breakfast Wrap",
+    "type": "Breakfast",
+    "time": 18,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick"
+    ],
+    "description": "Vegetarian breakfast wrap with mushrooms, spinach, egg, and tomato.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 tortilla",
+      "2 eggs",
+      "1/2 cup mushrooms",
+      "1 cup spinach",
+      "1/4 cup diced tomato",
+      "1 tsp olive oil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 330,
+    "name": "Cinnamon Apple Oat Bowl",
+    "type": "Breakfast",
+    "time": 12,
+    "cuisine": "American",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick",
+      "budget"
+    ],
+    "description": "Vegan oatmeal topped with warm cinnamon apples and walnuts.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup oats",
+      "2 cups oat milk",
+      "1 apple",
+      "1/2 tsp cinnamon",
+      "1 tbsp walnuts",
+      "1 tsp maple syrup"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 331,
+    "name": "Huevos Rancheros",
+    "type": "Breakfast",
+    "time": 22,
+    "cuisine": "Mexican",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "gluten-free"
+    ],
+    "description": "Vegetarian eggs with black beans, salsa, avocado, and corn tortillas.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 eggs",
+      "1/2 cup black beans",
+      "2 corn tortillas",
+      "1/2 cup salsa",
+      "1/2 avocado",
+      "Cilantro"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 332,
+    "name": "Tomato Basil White Bean Toast",
+    "type": "Breakfast",
+    "time": 12,
+    "cuisine": "Italian",
+    "tags": [
+      "breakfast",
+      "vegan",
+      "quick",
+      "budget"
+    ],
+    "description": "Vegan toast topped with white beans, tomato, basil, and lemon.",
+    "creator": "Community Cooks",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 slices sourdough",
+      "1/2 cup white beans",
+      "1/2 cup diced tomato",
+      "Fresh basil",
+      "1 tsp lemon juice",
+      "1 tsp olive oil"
+    ],
+    "steps": [
+      "Prepare and chop the ingredients.",
+      "Cook the vegetables or main ingredients until tender.",
+      "Combine the ingredients and season to taste.",
+      "Warm or finish cooking as needed.",
+      "Serve fresh."
     ]
   }
 ]
