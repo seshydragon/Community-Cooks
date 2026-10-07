@@ -8,55 +8,150 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><div class="header-inner">
-<a class="wordmark" href="#home" aria-label="Community Cooks home"><span class="mark">CC</span><span>Community Cooks</span></a>
-<nav class="main-nav" aria-label="Primary navigation"><a href="#discover">Discover</a><a href="#challenges">Challenges</a><a href="#leaderboard">Leaderboard</a></nav>
-<button class="header-action" data-open-recipe>Share a recipe</button>
-</div></header>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#home" aria-label="Community Cooks home"><span class="mark">CC</span><span>Community Cooks</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#discover">Discover</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#leaderboard">Leaderboard</a>
+    </nav>
+    <button class="header-action" type="button" data-open-recipe>Share a recipe</button>
+  </div>
+</header>
 
 <main id="home">
-<section class="hero"><div class="hero-copy">
-<p class="eyebrow">A cooking community for real people</p>
-<h1>Good food gets<br><em>better together.</em></h1>
-<p class="hero-lede">Find recipes worth making, cook alongside your community, and turn everyday meals into something you can be proud of.</p>
-<div class="hero-actions"><a class="button button-dark" href="#discover">Explore recipes</a><a class="text-link" href="#challenges">See this week's challenge <span>→</span></a></div>
-<div class="hero-note"><span class="live-dot"></span><span><strong>1,248 cooks</strong> are active this week</span></div>
-</div>
-<div class="hero-visual"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="A colorful bowl of fresh vegetables and grains">
-<div class="recipe-float"><span class="float-label">Community pick</span><strong>Weeknight Grain Bowl</strong><span>28 cooks made it this week</span></div></div>
-</section>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">A cooking community for real people</p>
+      <h1>Good food gets<br><em>better together.</em></h1>
+      <p class="hero-lede">Find recipes worth making, cook alongside your community, and turn everyday meals into something you can be proud of.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#discover">Explore recipes</a>
+        <a class="text-link" href="#challenges">See this week's challenge <span>→</span></a>
+      </div>
+      <div class="hero-note"><span class="live-dot"></span><span><strong>1,248 cooks</strong> are active this week</span></div>
+    </div>
+    <div class="hero-visual">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="A colorful bowl of fresh vegetables and grains">
+      <div class="recipe-float"><span class="float-label">Community pick</span><strong>Weeknight Grain Bowl</strong><span>28 cooks made it this week</span></div>
+    </div>
+  </section>
 
-<section class="proof-strip" aria-label="Community activity"><div><strong>4.9</strong><span>average recipe rating</span></div><div><strong>6.2k</strong><span>recipes shared</span></div><div><strong>31k</strong><span>meals cooked</span></div><div><strong>82%</strong><span>return after their first cook</span></div></section>
+  <section class="proof-strip" aria-label="Community activity">
+    <div><strong>4.9</strong><span>average recipe rating</span></div>
+    <div><strong>6.2k</strong><span>recipes shared</span></div>
+    <div><strong>31k</strong><span>meals cooked</span></div>
+    <div><strong>82%</strong><span>return after their first cook</span></div>
+  </section>
 
-<section class="section discover" id="discover">
-<div class="section-heading"><div><p class="eyebrow">Find your next meal</p><h2>Recipes people are actually cooking.</h2></div><button class="filter-toggle" id="filterToggle">Filters <span>+</span></button></div>
-<div class="filter-row" id="filterRow"><label class="search-box"><span class="sr-only">Search recipes</span><input id="searchInput" type="search" placeholder="Search recipes, ingredients, or cooks"><span>⌕</span></label>
-<div class="chips" role="group" aria-label="Recipe filters"><button class="chip active" data-filter="all">All recipes</button><button class="chip" data-filter="quick">Under 30 min</button><button class="chip" data-filter="vegetarian">Vegetarian</button><button class="chip" data-filter="budget">Budget friendly</button></div></div>
-<div class="recipe-grid" id="recipeGrid"></div><p class="empty-state" id="emptyState" hidden>No recipes match that search. Try a different ingredient or filter.</p>
-</section>
+  <section class="section discover" id="discover">
+    <div class="section-heading">
+      <div><p class="eyebrow">Find your next meal</p><h2>Recipes people are actually cooking.</h2></div>
+      <button class="filter-toggle" id="filterToggle" type="button">Filters <span>+</span></button>
+    </div>
+    <div class="filter-row" id="filterRow">
+      <label class="search-box"><span class="sr-only">Search recipes</span><input id="searchInput" type="search" placeholder="Search recipes, ingredients, or cooks"><span>⌕</span></label>
+      <div class="chips" role="group" aria-label="Recipe filters">
+        <button class="chip active" type="button" data-filter="all">All recipes</button>
+        <button class="chip" type="button" data-filter="quick">Under 30 min</button>
+        <button class="chip" type="button" data-filter="vegetarian">Vegetarian</button>
+        <button class="chip" type="button" data-filter="budget">Budget friendly</button>
+      </div>
+    </div>
+    <div class="recipe-grid" id="recipeGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>No recipes match that search. Try a different ingredient or filter.</p>
+  </section>
 
-<section class="challenge-section" id="challenges"><div class="challenge-art"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85" alt="Hands preparing ingredients on a kitchen counter"></div>
-<div class="challenge-copy"><p class="eyebrow">The weekly challenge</p><h2>Make the ordinary memorable.</h2><p>This week, take one familiar ingredient and make it the star. Share your version, see what other cooks made, and earn points for showing up.</p>
-<div class="challenge-meta"><div><strong>5 days</strong><span>remaining</span></div><div><strong>642</strong><span>entries</span></div><div><strong>250 pts</strong><span>top prize</span></div></div>
-<button class="button button-rust" id="joinChallenge">Join the challenge</button><p class="challenge-status" id="challengeStatus" aria-live="polite"></p></div></section>
+  <section class="challenge-section" id="challenges">
+    <div class="challenge-art"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85" alt="Hands preparing ingredients on a kitchen counter"></div>
+    <div class="challenge-copy">
+      <p class="eyebrow">The weekly challenge</p>
+      <h2>Make the ordinary memorable.</h2>
+      <p>This week, take one familiar ingredient and make it the star. Share your version, see what other cooks made, and earn points for showing up.</p>
+      <div class="challenge-meta"><div><strong>5 days</strong><span>remaining</span></div><div><strong>642</strong><span>entries</span></div><div><strong>250 pts</strong><span>top prize</span></div></div>
+      <button class="button button-rust" id="joinChallenge" type="button">Join the challenge</button>
+      <p class="challenge-status" id="challengeStatus" aria-live="polite"></p>
+    </div>
+  </section>
 
-<section class="section leaderboard" id="leaderboard"><div class="section-heading"><div><p class="eyebrow">Community momentum</p><h2>This week's cooks.</h2></div><span class="period-label">October 1 to October 7</span></div>
-<div class="leaderboard-layout"><div class="rank-list" id="rankList"></div><aside class="your-progress"><p class="eyebrow">Your progress</p><div class="progress-head"><strong id="userPoints">180 pts</strong><span>Rising cook</span></div><div class="progress-bar"><span id="progressBar"></span></div><p><strong>70 pts</strong> until you reach Home Cook.</p><button class="button button-outline" id="cookNow">Log a cook</button><p class="progress-message" id="progressMessage" aria-live="polite"></p></aside></div></section>
+  <section class="section leaderboard" id="leaderboard">
+    <div class="section-heading">
+      <div><p class="eyebrow">Community momentum</p><h2>This week's cooks.</h2></div>
+      <span class="period-label">October 1 to October 7</span>
+    </div>
+    <div class="leaderboard-layout">
+      <div class="rank-list" id="rankList"></div>
+      <aside class="your-progress">
+        <p class="eyebrow">Your progress</p>
+        <div class="progress-head"><strong id="userPoints">180 pts</strong><span>Rising cook</span></div>
+        <div class="progress-bar"><span id="progressBar"></span></div>
+        <p id="progressText"><strong>70 pts</strong> until you reach Home Cook.</p>
+        <button class="button button-outline" id="cookNow" type="button">Log a cook</button>
+        <p class="progress-message" id="progressMessage" aria-live="polite"></p>
+      </aside>
+    </div>
+  </section>
 
-<section class="section how-it-works"><div class="section-heading"><div><p class="eyebrow">How it works</p><h2>Less scrolling. More cooking.</h2></div></div>
-<div class="steps"><article><span>01</span><h3>Choose something worth making</h3><p>Browse recipes with time, cost, dietary, and community signals that help you decide quickly.</p></article><article><span>02</span><h3>Cook it your way</h3><p>Save a recipe, follow the steps, and make notes so the next version is even better.</p></article><article><span>03</span><h3>Bring it back to the table</h3><p>Share what you made, earn points, and help another cook discover their next favorite.</p></article></div></section>
+  <section class="section how-it-works">
+    <div class="section-heading"><div><p class="eyebrow">How it works</p><h2>Less scrolling. More cooking.</h2></div></div>
+    <div class="steps">
+      <article><span>01</span><h3>Choose something worth making</h3><p>Browse recipes with time, cost, dietary, and community signals that help you decide quickly.</p></article>
+      <article><span>02</span><h3>Cook it your way</h3><p>Save a recipe, follow the steps, and make notes so the next version is even better.</p></article>
+      <article><span>03</span><h3>Bring it back to the table</h3><p>Share what you made, earn points, and help another cook discover their next favorite.</p></article>
+    </div>
+  </section>
 
-<section class="final-cta"><div><p class="eyebrow">Your kitchen, your community</p><h2>There is always one more thing to cook.</h2></div><button class="button button-cream" data-open-recipe>Share your recipe</button></section>
+  <section class="final-cta">
+    <div><p class="eyebrow">Your kitchen, your community</p><h2>There is always one more thing to cook.</h2></div>
+    <button class="button button-cream" type="button" data-open-recipe>Share your recipe</button>
+  </section>
 </main>
 
-<footer class="site-footer"><div class="footer-main"><div><a class="wordmark footer-brand" href="#home"><span class="mark">CC</span><span>Community Cooks</span></a><p>A community built around the simple idea that cooking is better when you have people to share it with.</p></div>
-<div class="footer-links"><div><strong>Explore</strong><a href="#discover">Recipes</a><a href="#challenges">Challenges</a><a href="#leaderboard">Leaderboard</a></div><div><strong>Community</strong><a href="#home">About the project</a><a href="#discover">Cook together</a><a href="#challenges">Weekly challenge</a></div></div></div>
-<div class="footer-bottom"><span>Community Cooks</span><span>Built for people who like to cook.</span></div></footer>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <a class="wordmark footer-brand" href="#home"><span class="mark">CC</span><span>Community Cooks</span></a>
+      <p>A community built around the simple idea that cooking is better when you have people to share it with.</p>
+    </div>
+    <div class="footer-links">
+      <div><strong>Explore</strong><a href="#discover">Recipes</a><a href="#challenges">Challenges</a><a href="#leaderboard">Leaderboard</a></div>
+      <div><strong>Community</strong><a href="#home">About the project</a><a href="#discover">Cook together</a><a href="#challenges">Weekly challenge</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>Community Cooks</span><span>Built for people who like to cook.</span></div>
+</footer>
 
-<div class="modal-backdrop" id="recipeModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close-modal aria-label="Close recipe form">×</button><p class="eyebrow">Share something good</p><h2 id="modalTitle">Add your recipe.</h2><p class="modal-intro">A simple recipe is enough. The community can help it grow.</p>
-<form id="recipeForm"><label>Recipe name<input required name="name" placeholder="e.g. Crispy chili noodles"></label><div class="form-split"><label>Time<input required name="time" type="number" min="1" placeholder="25"></label><label>Category<select name="category"><option value="quick">Quick</option><option value="vegetarian">Vegetarian</option><option value="budget">Budget friendly</option></select></label></div><label>Short description<textarea required name="description" rows="3" placeholder="What makes this recipe worth trying?"></textarea></label><button class="button button-dark" type="submit">Publish recipe</button></form></section></div>
+<div class="modal-backdrop" id="recipeModal" hidden>
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close recipe form">×</button>
+    <p class="eyebrow">Share something good</p><h2 id="modalTitle">Add your recipe.</h2>
+    <p class="modal-intro">A simple recipe is enough. The community can help it grow.</p>
+    <form id="recipeForm">
+      <label>Recipe name<input required name="name" placeholder="e.g. Crispy chili noodles"></label>
+      <div class="form-split">
+        <label>Time<input required name="time" type="number" min="1" placeholder="25"></label>
+        <label>Category<select name="category"><option value="quick">Quick</option><option value="vegetarian">Vegetarian</option><option value="budget">Budget friendly</option></select></label>
+      </div>
+      <label>Short description<textarea required name="description" rows="3" placeholder="What makes this recipe worth trying?"></textarea></label>
+      <button class="button button-dark" type="submit">Publish recipe</button>
+    </form>
+  </section>
+</div>
 
-<div class="cook-modal-backdrop" id="cookModal" hidden><section class="cook-modal" role="dialog" aria-modal="true" aria-labelledby="cookTitle"><button class="modal-close" id="closeCook" aria-label="Close cook mode">×</button><p class="eyebrow">Cook mode</p><h2 id="cookTitle">Weeknight Grain Bowl</h2><p>Prep your ingredients, then work through the build one step at a time.</p><div class="cook-step"><span>1</span><strong>Roast</strong><p>Roast the vegetables until the edges are browned and tender.</p></div><div class="cook-step"><span>2</span><strong>Build</strong><p>Add warm grains, greens, roasted vegetables, and your dressing.</p></div><div class="cook-step"><span>3</span><strong>Finish</strong><p>Add herbs, seeds, and a squeeze of lemon before serving.</p></div><button class="button button-rust" id="finishCook">I cooked this</button></section></div>
+<div class="cook-modal-backdrop" id="cookModal" hidden>
+  <section class="cook-modal" role="dialog" aria-modal="true" aria-labelledby="cookTitle">
+    <button class="modal-close" id="closeCook" type="button" aria-label="Close cook mode">×</button>
+    <p class="eyebrow">Cook mode</p>
+    <h2 id="cookTitle">Weeknight Grain Bowl</h2>
+    <p>Prep your ingredients, then work through the build one step at a time.</p>
+    <div class="cook-step"><span>1</span><strong>Roast</strong><p>Roast the vegetables until the edges are browned and tender.</p></div>
+    <div class="cook-step"><span>2</span><strong>Build</strong><p>Add warm grains, greens, roasted vegetables, and your dressing.</p></div>
+    <div class="cook-step"><span>3</span><strong>Finish</strong><p>Add herbs, seeds, and a squeeze of lemon before serving.</p></div>
+    <button class="button button-rust" id="finishCook" type="button">I cooked this</button>
+  </section>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>
