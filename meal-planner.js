@@ -193,3 +193,5 @@ try{
 }catch{}
 
 renderPlanner();
+
+initFilterDropdowns();
