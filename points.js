@@ -1,4 +1,4 @@
-function getPoints(){try{return Number(localStorage.getItem("ccPoints")||0)}catch{return 0}}
+function getPoints(){try{const value=Number(localStorage.getItem("ccPoints")||0); if(value>10000){localStorage.setItem("ccPoints","0");localStorage.removeItem("ccPointRewards"); return 0} return value}catch{return 0}}
 function setPoints(value){localStorage.setItem("ccPoints",String(Math.max(0,value)))}
 function updatePointsUI(){
   const points=getPoints();
