@@ -48,7 +48,7 @@ document.getElementById("savePlan")?.addEventListener("click",()=>{
  localStorage.setItem("ccMealPlan",JSON.stringify(plan));
  const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan saved. +20 points.";
  const signature=JSON.stringify(plan);const previous=localStorage.getItem("ccLastSavedPlan");
- if(signature!==previous){const current=Number(localStorage.getItem("ccPoints")||0);localStorage.setItem("ccPoints",String(current+20));localStorage.setItem("ccLastSavedPlan",signature);}
+ if(signature!==previous){if(window.awardPoints?.(20,"meal-plan-"+signature)){localStorage.setItem("ccLastSavedPlan",signature);}}
 });
 document.getElementById("clearPlan")?.addEventListener("click",()=>{localStorage.removeItem("ccMealPlan");renderPlanner();const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan cleared."});
 document.querySelectorAll("[data-pref]").forEach(c=>c.addEventListener("change",()=>{localStorage.setItem("ccMealPlanPrefs",JSON.stringify(selectedPreferences()))}));
