@@ -1,7 +1,7 @@
 const plannerDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 const plannerMeals=["Breakfast","Lunch","Dinner"];
 function escPlanner(v){return String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function selectedPreferences(){return [...document.querySelectorAll("[data-pref]:checked")].map(x=>x.value)}
+function sanitizePlannerPoints(){try{const raw=Number(localStorage.getItem("ccPoints")||0);if(!Number.isFinite(raw)||raw<0||raw>1000){localStorage.setItem("ccPoints","0");localStorage.removeItem("ccPointRewards");localStorage.removeItem("ccLastSavedPlan");}}catch{}}\nsanitizePlannerPoints();\nfunction selectedPreferences(){return [...document.querySelectorAll("[data-pref]:checked")].map(x=>x.value)}
 function scoreRecipe(r,prefs,meal){
  const tags=new Set(r.tags||[]); let score=0;
  prefs.forEach(p=>{if(tags.has(p))score+=5;});
@@ -48,7 +48,7 @@ document.getElementById("savePlan")?.addEventListener("click",()=>{
  localStorage.setItem("ccMealPlan",JSON.stringify(plan));
  const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan saved. +20 points.";
  const signature=JSON.stringify(plan);const previous=localStorage.getItem("ccLastSavedPlan");
- if(signature!==previous){if(window.awardPoints?.(20,"meal-plan-"+signature)){localStorage.setItem("ccLastSavedPlan",signature);}}
+ if(signature!==previous){if(window.awardPoints?.(20,"meal-plan-saved")){localStorage.setItem("ccLastSavedPlan",signature);}}
 });
 document.getElementById("clearPlan")?.addEventListener("click",()=>{localStorage.removeItem("ccMealPlan");renderPlanner();const message=document.getElementById("plannerMessage");if(message)message.textContent="Meal plan cleared."});
 document.querySelectorAll("[data-pref]").forEach(c=>c.addEventListener("change",()=>{localStorage.setItem("ccMealPlanPrefs",JSON.stringify(selectedPreferences()))}));
