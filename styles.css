@@ -78,3 +78,5 @@
 .preference-groups input{accent-color:var(--blue);width:14px;height:14px}
 @media(max-width:900px){.planner-preferences{grid-template-columns:1fr;gap:30px}.preference-groups{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.preference-groups{grid-template-columns:1fr}.planner-preferences h2{font-size:36px}}
+
+.planner-builder .preference-groups{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.planner-builder .preference-groups>div{border-top:1px solid var(--line);padding-top:18px}.planner-builder label{display:block;margin:9px 0;color:var(--text)}.planner-builder input{margin-right:8px;accent-color:var(--blue)}@media(max-width:900px){.planner-builder .preference-groups{grid-template-columns:1fr 1fr}}@media(max-width:600px){.planner-builder .preference-groups{grid-template-columns:1fr}}
