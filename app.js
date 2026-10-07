@@ -83,11 +83,17 @@ function renderRecipes(){
  const grid=$("recipeGrid"), empty=$("emptyState"); if(!grid)return;
  const query=($("searchInput")?.value||"").trim().toLowerCase();
  const active=document.querySelector(".chip.active")?.dataset.filter||"all";
+ const cuisines=selectedRecipeFilters("cuisine"), meals=selectedRecipeFilters("meal"), diets=selectedRecipeFilters("diet"), times=selectedRecipeFilters("time");
  const filtered=allRecipes().filter(r=>{
    const hay=[r.name,r.description,r.type,r.cuisine,...(r.tags||[])].join(" ").toLowerCase();
+   const tags=new Set(r.tags||[]);
    const matchQuery=!query||hay.includes(query);
-   const match=active==="all"||r.tags?.includes(active)||(active==="quick"&&r.time<30);
-   return matchQuery&&match;
+   const matchLegacy=active==="all"||tags.has(active)||(active==="quick"&&Number(r.time)<30);
+   const matchCuisine=!cuisines.length||cuisines.includes(r.cuisine);
+   const matchMeal=!meals.length||meals.includes(String(r.type).toLowerCase());
+   const matchDiet=!diets.length||diets.every(d=>tags.has(d)||(d==="vegetarian"&&tags.has("vegan")));
+   const matchTime=!times.length||times.some(t=>Number(r.time)<=Number(t));
+   return matchQuery&&matchLegacy&&matchCuisine&&matchMeal&&matchDiet&&matchTime;
  });
  grid.innerHTML=filtered.map(recipeCard).join("");
  if(empty)empty.hidden=filtered.length!==0;
@@ -139,7 +145,12 @@ function saveRecipeForm(){
 function initFilters(){
  document.querySelectorAll(".chip[data-filter]").forEach(chip=>chip.addEventListener("click",()=>{document.querySelectorAll(".chip[data-filter]").forEach(x=>x.classList.remove("active"));chip.classList.add("active");renderRecipes()}));
  $("searchInput")?.addEventListener("input",renderRecipes);
+ const filters=[...document.querySelectorAll(".recipe-filter")];
+ filters.forEach(filter=>filter.addEventListener("toggle",()=>{if(filter.open)filters.forEach(other=>{if(other!==filter)other.removeAttribute("open")})}));
+ document.addEventListener("click",e=>{if(!e.target.closest(".recipe-filter"))filters.forEach(filter=>filter.removeAttribute("open"))});
+ document.querySelectorAll("[data-recipe-filter]").forEach(input=>input.addEventListener("change",renderRecipes));
 }
+function selectedRecipeFilters(type){return [...document.querySelectorAll('[data-recipe-filter="'+type+'"]:checked')].map(x=>x.value)}
 function initChallenge(){
  $("joinChallenge")?.addEventListener("click",()=>{
    if(localStorage.getItem("ccChallengeComplete")==="1"){ $("challengeStatus").textContent="Challenge already completed."; return}
