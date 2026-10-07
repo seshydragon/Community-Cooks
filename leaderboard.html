@@ -1,1 +1,40 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community Cooks | Leaderboard</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><div class="header-inner"><a class="wordmark" href="index.html"><span class="dragon-mark">CC</span><span>Community Cooks</span></a><nav class="main-nav"><a href="index.html">Home</a><a href="discover.html">Recipes</a><a href="challenges.html">Challenges</a><a class="active" href="leaderboard.html">Leaderboard</a></nav><a class="header-action" href="discover.html">Cook something</a></div></header><main class="page-shell"><section class="page-heading"><p class="eyebrow">Community progress</p><h1>Keep<br><em>cooking.</em></h1><p>Log your cooks and see your progress.</p></section><section class="leaderboard-page"><div><div class="table-head"><span>Rank</span><span>Cook</span><span>Cooks</span><span>Points</span></div><div id="rankList"></div></div><aside class="progress-panel"><p class="eyebrow">Your progress</p><strong id="userPoints">0 pts</strong><div class="progress-bar"><span id="progressBar"></span></div><p id="progressText"></p><button class="button button-blue" id="logCook">Log a cook</button><p id="progressMessage" class="status" aria-live="polite"></p></aside></section></main><footer class="site-footer"><div><a class="wordmark" href="index.html"><span class="dragon-mark">CC</span><span>Community Cooks</span></a><p>Built for people who like to cook.</p></div><nav><a href="index.html">Home</a><a href="discover.html">Recipes</a><a href="challenges.html">Challenges</a></nav></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Community Cooks | Leaderboard</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="header-inner">
+<a class="wordmark" href="index.html"><span class="dragon-mark" aria-hidden="true"></span><span>Community Cooks</span></a>
+<nav class="main-nav"><a href="index.html">Home</a><a href="discover.html">Recipes</a><a href="meal-planner.html">Meal Planner</a><a href="challenges.html">Challenges</a><a class="active" href="leaderboard.html">Leaderboard</a></nav>
+<a class="header-action" href="discover.html">Cook something</a>
+</div></header>
+<main class="page-shell">
+<section class="page-heading"><p class="eyebrow">Community progress</p><h1>Earn your<br><em>place.</em></h1><p>Every useful thing you do on Community Cooks can move you up the board.</p></section>
+<section class="leaderboard-page">
+<div>
+<div class="table-head"><span>Rank</span><span>Cook</span><span>Points</span></div>
+<div id="rankList" class="empty-ranks"><div class="empty-rank-message"><strong>No cooks yet.</strong><span>Invite your friends and the leaderboard will fill up here.</span></div></div>
+</div>
+<aside class="progress-panel">
+<p class="eyebrow">Your points</p><strong id="userPoints">0 pts</strong>
+<div class="progress-bar"><span id="progressBar"></span></div>
+<p id="progressText">Earn points by cooking and contributing.</p>
+<button class="button button-blue" id="logCook">Log a cook +30</button>
+<p id="progressMessage" class="status" aria-live="polite"></p>
+</aside>
+</section>
+<section class="points-section">
+<div><p class="eyebrow">Point system</p><h2>What earns points?</h2><p class="points-note">The goal is to reward actual participation, not meaningless clicks.</p></div>
+<div class="points-list">
+<div><strong>+30</strong><span>Cook a recipe</span></div>
+<div><strong>+50</strong><span>Submit a recipe</span></div>
+<div><strong>+75</strong><span>Complete a weekly challenge</span></div>
+<div><strong>+20</strong><span>Save a weekly meal plan</span></div>
+<div><strong>+100</strong><span>Take part in a verified community event</span></div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div><a class="wordmark" href="index.html"><span class="dragon-mark" aria-hidden="true"></span><span>Community Cooks</span></a><p>Built for people who like to cook.</p></div>
+<nav><a href="discover.html">Recipes</a><a href="meal-planner.html">Meal Planner</a><a href="challenges.html">Challenges</a></nav></footer>
+<script src="app.js"></script><script src="points.js"></script>
+</body></html>
