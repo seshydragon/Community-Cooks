@@ -104,3 +104,24 @@
 .filter-options input{margin:0;accent-color:var(--blue)}
 @media(max-width:900px){.compact-preferences{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.compact-preferences{grid-template-columns:1fr}}
+
+
+/* Brand + visual polish */
+.dragon-mark{position:relative;width:28px;height:28px;display:inline-block;flex:0 0 28px;background:linear-gradient(145deg,#3d9bff 0%,#1b5fa9 70%);clip-path:polygon(50% 0%,66% 13%,86% 9%,79% 28%,100% 42%,83% 51%,88% 72%,68% 67%,50% 100%,34% 69%,12% 76%,18% 54%,0% 42%,19% 29%,14% 9%,35% 14%);filter:drop-shadow(0 0 8px rgba(61,155,255,.22))}
+.wordmark{display:inline-flex;align-items:center;gap:10px}
+.hero-art{overflow:hidden}
+.hero-art:before{content:"";position:absolute;width:420px;height:420px;left:50%;top:48%;transform:translate(-50%,-50%);border:1px solid rgba(74,155,255,.16);border-radius:50%;box-shadow:0 0 90px rgba(30,105,190,.13),inset 0 0 70px rgba(30,105,190,.08)}
+.hero-art:after{content:"";position:absolute;inset:auto 12% 11% 12%;height:1px;background:linear-gradient(90deg,transparent,rgba(75,157,255,.28),transparent)}
+.cute-dragon{filter:drop-shadow(0 24px 22px rgba(0,0,0,.4))}
+.dragon-belly{opacity:.7}
+.hero-art-copy{letter-spacing:.02em}
+.hero-art-copy strong{display:block;margin-top:8px}
+.recipe-tools{gap:18px}
+.recipe-filters{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:10px;width:100%;margin-top:6px}
+.recipe-filter{margin-top:0}
+.recipe-filter summary{background:#091522;border:1px solid #263c55;color:#dceaff}
+.recipe-filter .filter-options{top:48px}
+.recipe-filter summary:after{content:"+"}
+.recipe-filter[open] summary:after{content:"−"}
+@media(max-width:800px){.recipe-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.recipe-filters{grid-template-columns:1fr}}
