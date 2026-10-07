@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community Cooks | Add Recipe</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="header-inner">
+<a class="wordmark" href="index.html"><span class="dragon-mark">CC</span><span>Community Cooks</span></a>
+<nav class="main-nav"><a href="index.html">Home</a><a href="discover.html">Recipes</a><a href="challenges.html">Challenges</a><a href="leaderboard.html">Leaderboard</a></nav>
+<a class="header-action" href="discover.html">Recipes</a>
+</div></header>
+<main class="page-shell add-page">
+<div class="page-heading"><p class="eyebrow">Share a recipe</p><h1>Put your recipe<br><em>on the table.</em></h1><p>Add a recipe and it will appear in your recipe library on this device.</p></div>
+<form class="recipe-form" id="recipeForm">
+<div class="form-grid">
+<label><span>Recipe name</span><input name="name" required maxlength="80" placeholder="e.g. Family Chicken Curry"></label>
+<label><span>Your name</span><input name="creator" maxlength="50" placeholder="e.g. Sesha"></label>
+<label><span>Cuisine</span><input name="cuisine" maxlength="40" placeholder="e.g. Indian"></label>
+<label><span>Time in minutes</span><input name="time" type="number" min="1" max="600" value="30" required></label>
+</div>
+<label><span>Short description</span><textarea name="description" rows="3" required maxlength="220" placeholder="What makes this recipe worth cooking?"></textarea></label>
+<label><span>Ingredients <small>one per line</small></span><textarea name="ingredients" rows="7" required placeholder="2 cups rice&#10;1 onion&#10;2 tbsp oil"></textarea></label>
+<label><span>Instructions <small>one step per line</small></span><textarea name="steps" rows="7" required placeholder="Cook the rice.&#10;Chop the onion.&#10;Combine and serve."></textarea></label>
+<label><span>Photo URL <small>optional</small></span><input name="image" type="url" placeholder="https://..."></label>
+<label><span>Categories</span><select name="category" multiple size="4"><option value="quick">Under 30 min</option><option value="vegetarian">Vegetarian</option><option value="budget">Budget</option></select><small class="field-help">Hold Ctrl while clicking to choose more than one.</small></label>
+<div class="form-actions"><button class="button button-blue" type="submit">Save recipe</button><a class="text-link" href="discover.html">Back to recipes →</a></div>
+<p class="form-message" aria-live="polite"></p>
+</form>
+</main>
+<footer class="site-footer"><div><a class="wordmark" href="index.html"><span class="dragon-mark">CC</span><span>Community Cooks</span></a><p>Built for people who like to cook.</p></div><nav><a href="discover.html">Recipes</a><a href="challenges.html">Challenges</a><a href="leaderboard.html">Leaderboard</a></nav></footer>
+<script src="app.js"></script></body></html>
