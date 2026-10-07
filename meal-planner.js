@@ -42,3 +42,136 @@ function pickRecipe(pool,prefs,meal,used){
   const top=ranked.slice(0,Math.min(6,ranked.length));
   return top[Math.floor(Math.random()*top.length)].r;
 };
+function buildPlan(){
+  const prefs=selectedPreferences();
+  const mealTypes=selectedMeals();
+  const used=new Set();
+  const plan={};
+  const library=allRecipes();
+
+  for(const day of plannerDays){
+    for(const mk of mealTypes){
+      const meal=mk.charAt(0).toUpperCase()+mk.slice(1);
+      const pool=library.filter(r=>r.type===meal);
+      let recipe=pickRecipe(pool.length?pool:library,prefs,meal,used);
+      if(recipe){
+        plan[day+"-"+meal]=String(recipe.id);
+        used.add(String(recipe.id));
+      }
+    }
+  }
+
+  localStorage.setItem("ccMealPlan",JSON.stringify(plan));
+  localStorage.setItem("ccMealPlanPrefs",JSON.stringify(prefs));
+  localStorage.setItem("ccMealPlanMeals",JSON.stringify(mealTypes));
+  renderPlanner();
+
+  const message=document.getElementById("plannerMessage");
+  if(message){
+    message.textContent=Object.keys(plan).length
+      ?"Your plan is ready."
+      :"No recipes match those preferences yet.";
+  }
+}
+
+function plannerOptions(){
+  return allRecipes().map(r=>
+    '<option value="'+escPlanner(r.id)+'">'+escPlanner(r.name)+'</option>'
+  ).join("");
+}
+
+function renderPlanner(){
+  const root=document.getElementById("plannerGrid");
+  if(!root)return;
+
+  let saved={};
+  try{
+    saved=JSON.parse(localStorage.getItem("ccMealPlan")||"{}");
+  }catch{}
+
+  let savedMeals=[];
+  try{
+    savedMeals=JSON.parse(localStorage.getItem("ccMealPlanMeals")||"[]");
+  }catch{}
+
+  const keys=Object.keys(saved);
+  const meals=[...new Set(
+    keys.map(k=>k.slice(k.indexOf("-")+1)).filter(Boolean)
+  )];
+
+  const showMeals=meals.length
+    ?meals
+    :savedMeals.length
+      ?savedMeals.map(x=>x.charAt(0).toUpperCase()+x.slice(1))
+      :baseMeals;
+
+  root.innerHTML=plannerDays.map(day=>
+    '<article class="day-card"><h2>'+day+"</h2>"+
+    showMeals.map(meal=>
+      '<label><span>'+meal+'</span><select data-plan-key="'+day+"-"+meal+
+      '"><option value="">Choose a recipe</option>'+plannerOptions()+
+      "</select></label>"
+    ).join("")+
+    "</article>"
+  ).join("");
+
+  root.querySelectorAll("select").forEach(select=>{
+    select.value=saved[select.dataset.planKey]||"";
+  });
+}
+
+document.getElementById("generatePlan")?.addEventListener("click",buildPlan);
+
+document.getElementById("savePlan")?.addEventListener("click",()=>{
+  const plan={};
+  document.querySelectorAll("[data-plan-key]").forEach(select=>{
+    if(select.value)plan[select.dataset.planKey]=select.value;
+  });
+
+  localStorage.setItem("ccMealPlan",JSON.stringify(plan));
+
+  const signature=JSON.stringify(plan);
+  const previous=localStorage.getItem("ccLastSavedPlan");
+  const message=document.getElementById("plannerMessage");
+
+  if(message)message.textContent="Meal plan saved.";
+
+  if(signature!==previous && window.awardPoints?.(20,"meal-plan-saved")){
+    localStorage.setItem("ccLastSavedPlan",signature);
+  }
+});
+
+document.getElementById("clearPlan")?.addEventListener("click",()=>{
+  localStorage.removeItem("ccMealPlan");
+  renderPlanner();
+  const message=document.getElementById("plannerMessage");
+  if(message)message.textContent="Meal plan cleared.";
+});
+
+document.querySelectorAll("[data-pref],[data-meal]").forEach(control=>{
+  control.addEventListener("change",()=>{
+    localStorage.setItem(
+      "ccMealPlanPrefs",
+      JSON.stringify(selectedPreferences())
+    );
+    localStorage.setItem(
+      "ccMealPlanMeals",
+      JSON.stringify(selectedMeals())
+    );
+  });
+});
+
+try{
+  const prefs=JSON.parse(localStorage.getItem("ccMealPlanPrefs")||"[]");
+  const meals=JSON.parse(localStorage.getItem("ccMealPlanMeals")||"[]");
+
+  document.querySelectorAll("[data-pref]").forEach(control=>{
+    control.checked=prefs.includes(control.value);
+  });
+
+  document.querySelectorAll("[data-meal]").forEach(control=>{
+    control.checked=meals.includes(control.value);
+  });
+}catch{}
+
+renderPlanner();
