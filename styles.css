@@ -159,3 +159,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
  .feature-grid,.home-intro,.page-shell{padding-left:16px;padding-right:16px}
  .page-heading h1{font-size:56px}
 }
+
+
+.image-credit{
+  margin:8px 0 0;
+  font-size:.78rem;
+  line-height:1.4;
+  color:#5f6b7a;
+}
