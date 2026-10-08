@@ -48,7 +48,11 @@ const BUILTIN_IMAGES={
   "5":"https://images.pexels.com/photos/35578518/pexels-photo-35578518.jpeg?cs=srgb&dl=pexels-mediha-ekici-2150926769-35578518.jpg&fm=jpg",
   "6":"https://images.pexels.com/photos/37366881/pexels-photo-37366881.jpeg?cs=srgb&dl=pexels-rainy-mars-37366881.jpg&fm=jpg",
   "15":"https://images.pexels.com/photos/6400025/pexels-photo-6400025.jpeg?cs=srgb&dl=pexels-alleksana-6400025.jpg&fm=jpg",
-  "19":"https://images.pexels.com/photos/18142611/pexels-photo-18142611.jpeg?cs=srgb&dl=pexels-jdgromov-18142611.jpg&fm=jpg"
+  "19":"https://images.pexels.com/photos/18142611/pexels-photo-18142611.jpeg?cs=srgb&dl=pexels-jdgromov-18142611.jpg&fm=jpg",
+  "9":"https://images.pexels.com/photos/6275220/pexels-photo-6275220.jpeg?cs=srgb&dl=pexels-n-voitkevich-6275220.jpg&fm=jpg",
+  "14":"https://images.pexels.com/photos/5546551/pexels-photo-5546551.jpeg?cs=srgb&dl=pexels-cottonbro-5546551.jpg&fm=jpg",
+  "16":"https://images.pexels.com/photos/10003794/pexels-photo-10003794.jpeg?cs=srgb&dl=pexels-laarkstudio-10003794.jpg&fm=jpg",
+  "20":"https://images.pexels.com/photos/8004561/pexels-photo-8004561.jpeg?cs=srgb&dl=pexels-darina-belonogova-8004561.jpg&fm=jpg"
 };
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
