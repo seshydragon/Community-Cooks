@@ -38,9 +38,18 @@ const RECIPES = [
 ];
 
 let LIBRARY_RECIPES = RECIPES;
-const IMAGE_CACHE_KEY="ccExternalRecipeImages-v3";
-const IMAGE_USED_KEY="ccExternalRecipeImageUrls-v3";
-const BUILTIN_IMAGES={};
+const IMAGE_CACHE_KEY="ccExternalRecipeImages-v4";
+const IMAGE_USED_KEY="ccExternalRecipeImageUrls-v4";
+const BUILTIN_IMAGES={
+  "1":"https://images.pexels.com/photos/600619/pexels-photo-600619.jpeg?cs=srgb&dl=pexels-monserratsoldu-600619.jpg&fm=jpg",
+  "2":"https://images.pexels.com/photos/30336930/pexels-photo-30336930.jpeg?cs=srgb&dl=pexels-praddspective-522718428-30336930.jpg&fm=jpg",
+  "3":"https://images.pexels.com/photos/7473576/pexels-photo-7473576.jpeg?cs=srgb&dl=pexels-yuliia-bas-6230057-7473576.jpg&fm=jpg",
+  "4":"https://images.pexels.com/photos/29333173/pexels-photo-29333173.jpeg?cs=srgb&dl=pexels-connorscottmcmanus-29333173.jpg&fm=jpg",
+  "5":"https://images.pexels.com/photos/35578518/pexels-photo-35578518.jpeg?cs=srgb&dl=pexels-mediha-ekici-2150926769-35578518.jpg&fm=jpg",
+  "6":"https://images.pexels.com/photos/37366881/pexels-photo-37366881.jpeg?cs=srgb&dl=pexels-rainy-mars-37366881.jpg&fm=jpg",
+  "15":"https://images.pexels.com/photos/6400025/pexels-photo-6400025.jpeg?cs=srgb&dl=pexels-alleksana-6400025.jpg&fm=jpg",
+  "19":"https://images.pexels.com/photos/18142611/pexels-photo-18142611.jpeg?cs=srgb&dl=pexels-jdgromov-18142611.jpg&fm=jpg"
+};
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
 function imageUsed(){return new Set(storage(IMAGE_USED_KEY,[]));}
@@ -155,7 +164,16 @@ async function loadRecipeLibrary(){
   if(Array.isArray(data)&&data.length){
     LIBRARY_RECIPES=data.map(r=>{
       const built=BUILTIN_IMAGES[String(r.id)];
-      return built ? {...r,image:built} : {...r,image:"",imageMeta:null};
+      return built ? {
+        ...r,
+        image:built,
+        imageMeta:{
+          url:built,
+          source:"Pexels",
+          license:"Pexels License",
+          landingUrl:"https://www.pexels.com/"
+        }
+      } : {...r,image:"",imageMeta:null};
     });
 
     // Render the complete library immediately. Image hydration happens in the
