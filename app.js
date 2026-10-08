@@ -66,8 +66,9 @@ function awardPoints(amount,key){
 function addPoints(amount,reason){return awardPoints(amount,reason+"-"+Date.now())?points():points()}
 function recipeImage(r){return r.image||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"}
 function imageFallback(img,type){
- const fallbacks={Breakfast:"https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1200&q=85",Lunch:"https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=85",Snack:"https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1200&q=85",Drink:"https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1200&q=85",Dessert:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=85",Dinner:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=85"};
- img.onerror=null; img.src=fallbacks[type]||fallbacks.Lunch;
+ const fallbacks={breakfast:"https://loremflickr.com/1200/800/breakfast,food?lock=101",lunch:"https://loremflickr.com/1200/800/lunch,food?lock=102",snack:"https://loremflickr.com/1200/800/snack,food?lock=103",drink:"https://loremflickr.com/1200/800/drink,food?lock=104",dessert:"https://loremflickr.com/1200/800/dessert,food?lock=105",dinner:"https://loremflickr.com/1200/800/dinner,food?lock=106"};
+ const key=String(type||"lunch").toLowerCase();
+ img.onerror=null; img.src=fallbacks[key]||fallbacks.lunch;
 }
 
 function recipeCard(r){
