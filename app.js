@@ -38,8 +38,8 @@ const RECIPES = [
 ];
 
 let LIBRARY_RECIPES = RECIPES;
-const IMAGE_CACHE_KEY="ccExternalRecipeImages";
-const IMAGE_USED_KEY="ccExternalRecipeImageUrls";
+const IMAGE_CACHE_KEY="ccExternalRecipeImages-v2";
+const IMAGE_USED_KEY="ccExternalRecipeImageUrls-v2";
 const BUILTIN_IMAGES={};
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
