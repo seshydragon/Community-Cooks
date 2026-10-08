@@ -59,7 +59,7 @@ async function resolveExternalImage(r,cache,used){
 
   try{
     const q=encodeURIComponent(openverseQuery(r));
-    const endpoint="https://api.openverse.org/v1/images/?q="+q+"&license_type=commercial&source=wikimedia&page_size=10";
+    const endpoint="https://api.openverse.org/v1/images/?q="+q+"&license=by,by-sa,cc0&source=wikimedia&page_size=10";
     const response=await fetch(endpoint,{headers:{Accept:"application/json"}});
     if(!response.ok) throw new Error("Openverse "+response.status);
     const payload=await response.json();
@@ -135,6 +135,15 @@ function recipeImage(r){return r.image||BUILTIN_IMAGES["36"]||"https://images.un
 function imageFallback(img){
  img.onerror=null;
  img.src=BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85";
+}
+function addOpenverseCredit(){
+ document.querySelectorAll(".site-footer").forEach(footer=>{
+   if(footer.querySelector(".openverse-credit")) return;
+   const p=document.createElement("p");
+   p.className="openverse-credit";
+   p.textContent="Recipe photography is sourced through Openverse from openly licensed works.";
+   footer.appendChild(p);
+ });
 }
 
 
@@ -236,4 +245,4 @@ function initLeaderboard(){
  $("logCook")?.addEventListener("click",()=>{addPoints(30,"cook");initLeaderboard();$("progressMessage").textContent="Cook logged. +30 points."});
 }
 window.RECIPES=RECIPES; window.allRecipes=allRecipes; window.findRecipe=findRecipe; window.recipeImage=recipeImage; window.addPoints=addPoints; window.awardPoints=awardPoints; window.points=points; window.logCook=logCook; window.storage=storage; window.setStorage=setStorage;
-document.addEventListener("DOMContentLoaded",()=>{renderRecipe();saveRecipeForm();initFilters();initChallenge();initLeaderboard();loadRecipeLibrary()});
+document.addEventListener("DOMContentLoaded",()=>{addOpenverseCredit();renderRecipe();saveRecipeForm();initFilters();initChallenge();initLeaderboard();loadRecipeLibrary()});
