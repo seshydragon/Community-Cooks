@@ -157,7 +157,20 @@ async function loadRecipeLibrary(){
       const built=BUILTIN_IMAGES[String(r.id)];
       return built ? {...r,image:built} : {...r,image:"",imageMeta:null};
     });
-    await hydrateRecipeImages();
+
+    // Render the complete library immediately. Image hydration happens in the
+    // background so 332 recipes are visible before any filter is applied.
+    renderRecipes(); renderSaved(); renderHistory(); renderRecipe(); window.renderPlanner?.();
+
+    // Do not block the recipe grid on external image lookups.
+    hydrateRecipeImages().then(()=>{
+      renderRecipes();
+      renderSaved();
+      renderHistory();
+      renderRecipe();
+      window.renderPlanner?.();
+    }).catch(error=>console.warn("Recipe image hydration failed.",error));
+    return;
   }
  }catch(error){ console.warn("Using built-in recipe library.",error); }
  renderRecipes(); renderSaved(); renderHistory(); renderRecipe(); window.renderPlanner?.();
