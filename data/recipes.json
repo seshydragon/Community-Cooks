@@ -912,7 +912,7 @@
     ],
     "description": "Tender chicken simmered in a tomato, yogurt, and spice sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fff1f2%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-1%20400%20330)%22%3E%3Crect%20fill%3D%22%23be123c%22%20x%3D%22243%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2240%22%2F%3E%3Ccircle%20fill%3D%22%23fff1f2%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2225%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EChicken%20Tikka%20Masala%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chicken_tikka_masala_at_the_office.jpg",
     "ingredients": [
       "1 lb chicken breast, cubed",
       "1/2 cup plain yogurt",
@@ -932,7 +932,11 @@
       "Add the main protein or vegetables and stir to coat.",
       "Add the listed sauce ingredients and simmer until the main ingredients are fully cooked and the sauce thickens.",
       "Finish with the listed herbs or lemon and serve with the listed rice or bread."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "JIP",
+    "imageLicense": "CC BY-SA 4.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_at_the_office.jpg"
   },
   {
     "id": 32,
@@ -946,7 +950,7 @@
     ],
     "description": "Rice noodles tossed with vegetables, lime, and a savory pad Thai sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23f5f3ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%230e7490%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(0%20400%20330)%22%3E%3Crect%20fill%3D%22%230e7490%22%20x%3D%22245%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2241%22%2F%3E%3Ccircle%20fill%3D%22%23f5f3ff%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2226%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EVegetable%20Pad%20Thai%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pad_Thai_in_Thailand.jpg",
     "ingredients": [
       "8 oz rice noodles",
       "1 tbsp oil",
@@ -964,7 +968,11 @@
       "Stir-fry the vegetables and tofu or other protein in a hot wok.",
       "Add the noodles and sauce and toss until the noodles are tender and coated.",
       "Finish with the listed peanuts, lime, or herbs and serve."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "Douglas Perkins",
+    "imageLicense": "CC BY 4.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pad_Thai_in_Thailand.jpg"
   },
   {
     "id": 33,
@@ -977,7 +985,7 @@
     ],
     "description": "Thin beef slices quickly marinated and caramelized in a savory sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fff7ed%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%230e7490%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(1%20400%20330)%22%3E%3Crect%20fill%3D%22%230e7490%22%20x%3D%22247%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2242%22%2F%3E%3Ccircle%20fill%3D%22%23fff7ed%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2227%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EBeef%20Bulgogi%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/5774000/pexels-photo-5774000.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 lb thin-sliced beef",
       "2 tbsp soy sauce",
@@ -994,7 +1002,11 @@
       "Toss the beef with the marinade and let it sit for at least 15 minutes.",
       "Cook the beef in a very hot skillet in a single layer until browned and cooked through.",
       "Finish with sesame seeds or scallions and serve with rice."
-    ]
+    ],
+    "imageSource": "Pexels",
+    "imageCredit": "Luis Becerra Fotógrafo",
+    "imageLicense": "Pexels License",
+    "imagePage": "https://www.pexels.com/photo/top-view-of-a-bulgogi-beef-bowl-5774000/"
   },
   {
     "id": 34,
@@ -1008,7 +1020,7 @@
     ],
     "description": "Crisp pizza dough with tomato, mozzarella, basil, and olive oil.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23f5f3ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23b45309%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(2%20400%20330)%22%3E%3Cpath%20fill%3D%22%23f5f3ff%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%2210%22%20d%3D%22M400%20180L600%20450H200z%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22358%22%20cy%3D%22330%22%20r%3D%2218%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22449%22%20cy%3D%22385%22%20r%3D%2218%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EMargherita%20Pizza%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Margherita_Pizza.jpg",
     "ingredients": [
       "1 pizza dough",
       "1/2 cup tomato sauce",
@@ -1023,7 +1035,11 @@
       "Add the cheese and toppings for Margherita Pizza.",
       "Bake until the crust is browned and the cheese is bubbling, about 10 to 15 minutes.",
       "Rest briefly, slice, and serve."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "Robertodan",
+    "imageLicense": "CC BY-SA 3.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Margherita_Pizza.jpg"
   },
   {
     "id": 35,
@@ -1037,7 +1053,7 @@
     ],
     "description": "Pan-seared salmon glazed with a quick homemade teriyaki sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fff1f2%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23b45309%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(3%20400%20330)%22%3E%3Crect%20fill%3D%22%23b45309%22%20x%3D%22251%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2244%22%2F%3E%3Ccircle%20fill%3D%22%23fff1f2%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2229%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3ESalmon%20Teriyaki%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Salmon_Teriyaki_at_restaurant_Same_Same_But_Different.jpg/3840px-Salmon_Teriyaki_at_restaurant_Same_Same_But_Different.jpg",
     "ingredients": [
       "2 salmon fillets",
       "2 tbsp soy sauce",
@@ -1053,7 +1069,11 @@
       "Sear the salmon in a hot skillet until browned, then turn it over.",
       "Pour in the teriyaki sauce and simmer until the salmon is cooked through and the sauce is glossy.",
       "Spoon the sauce over the salmon and serve with the listed side."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "JIP",
+    "imageLicense": "CC BY-SA 4.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Salmon_Teriyaki_at_restaurant_Same_Same_But_Different.jpg"
   },
   {
     "id": 36,
@@ -1068,7 +1088,7 @@
     ],
     "description": "Chickpeas simmered in a creamy coconut tomato curry.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fffbeb%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%231d4ed8%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-3%20400%20330)%22%3E%3Cpath%20fill%3D%22%231d4ed8%22%20d%3D%22M245%20330q155%20170%20310%200v65q-155%20105-310%200z%22%2F%3E%3Cellipse%20fill%3D%22%23fffbeb%22%20stroke%3D%22%231d4ed8%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22330%22%20rx%3D%22161%22%20ry%3D%2268%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22361%22%20cy%3D%22330%22%20r%3D%2217%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22413%22%20cy%3D%22350%22%20r%3D%2215%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EChickpea%20Coconut%20Curry%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chickpea_Curry.jpg",
     "ingredients": [
       "1 tbsp oil",
       "1 onion, diced",
@@ -1086,7 +1106,11 @@
       "Add the main protein or vegetables and stir to coat.",
       "Add the listed sauce ingredients and simmer until the main ingredients are fully cooked and the sauce thickens.",
       "Finish with the listed herbs or lemon and serve with the listed rice or bread."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "Gaurav Dhwaj Khadka",
+    "imageLicense": "CC BY-SA 4.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chickpea_Curry.jpg"
   },
   {
     "id": 37,
