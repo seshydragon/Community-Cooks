@@ -40,7 +40,7 @@ const RECIPES = [
 let LIBRARY_RECIPES = RECIPES;
 const IMAGE_CACHE_KEY="ccExternalRecipeImages";
 const IMAGE_USED_KEY="ccExternalRecipeImageUrls";
-const BUILTIN_IMAGES=Object.fromEntries(RECIPES.map(r=>[String(r.id),r.image]));
+const BUILTIN_IMAGES={};
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
 function imageUsed(){return new Set(storage(IMAGE_USED_KEY,[]));}
@@ -49,8 +49,12 @@ function saveImageState(cache,used){
   setStorage(IMAGE_USED_KEY,[...used].slice(-500));
 }
 function openverseQuery(r){
+  const name=String(r.name||"");
   const cuisine=String(r.cuisine||"").replace(/-inspired/gi,"");
-  return '"'+r.name+'" food '+cuisine;
+  const cleaned=name.replace(/&/g," ").replace(/\\b(herb|smoky|spicy|classic|quick|homemade|bowl|plate)\\b/gi," ");
+  const type=String(r.type||"").toLowerCase();
+  const dish=cleaned.replace(/\\s+/g," ").trim();
+  return '"' + dish + '" ' + cuisine + " " + type + " food";
 }
 async function resolveExternalImage(r,cache,used){
   const key=String(r.id);
@@ -64,7 +68,7 @@ async function resolveExternalImage(r,cache,used){
     if(!response.ok) throw new Error("Openverse "+response.status);
     const payload=await response.json();
     const results=Array.isArray(payload.results)?payload.results:[];
-    const pick=results.find(item=>item?.url && !used.has(item.url)) || results.find(item=>item?.url);
+    const pick=results.find(item=>item?.url && !used.has(item.url) && item?.thumbnail) || results.find(item=>item?.url && !used.has(item.url)) || results.find(item=>item?.url);
     if(!pick) throw new Error("No matching image");
     const record={
       url:pick.url,
@@ -80,12 +84,21 @@ async function resolveExternalImage(r,cache,used){
     return record;
   }catch(error){
     console.warn("External image lookup failed for",r.name,error);
-    return {url:BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",creator:"Openverse fallback",source:"Openverse"};
+    const fallbackByType={
+      breakfast:"https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=85",
+      lunch:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+      dinner:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+      snack:"https://images.unsplash.com/photo-1599599810694-b5ac4dd7a2b1?auto=format&fit=crop&w=1200&q=85",
+      drink:"https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=85",
+      dessert:"https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
+    };
+    const fallback=fallbackByType[String(r.type||"").toLowerCase()]||fallbackByType.dinner;
+    return {url:fallback,creator:"Openverse fallback",source:"Openverse"};
   }
 }
 async function hydrateRecipeImages(){
   const cache=imageCache(), used=imageUsed();
-  const targets=LIBRARY_RECIPES.filter(r=>!BUILTIN_IMAGES[String(r.id)]);
+  const targets=LIBRARY_RECIPES.filter(r=>!r.imageMeta?.url);
   const queue=[...targets];
   const worker=async()=>{
     while(queue.length){
@@ -131,10 +144,30 @@ function awardPoints(amount,key){
  return true;
 }
 function addPoints(amount,reason){return awardPoints(amount,reason+"-"+Date.now())?points():points()}
-function recipeImage(r){return r.image||BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"}
+function recipeImage(r){
+  if(r.image) return r.image;
+  const type=String(r.type||"").toLowerCase();
+  return ({
+    breakfast:"https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=85",
+    lunch:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    dinner:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    snack:"https://images.unsplash.com/photo-1599599810694-b5ac4dd7a2b1?auto=format&fit=crop&w=1200&q=85",
+    drink:"https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=85",
+    dessert:"https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
+  })[type]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85";
+}
 function imageFallback(img){
- img.onerror=null;
- img.src=BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85";
+  img.onerror=null;
+  const type=img.dataset.type||"dinner";
+  const fallbacks={
+    breakfast:"https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=85",
+    lunch:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    dinner:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",
+    snack:"https://images.unsplash.com/photo-1599599810694-b5ac4dd7a2b1?auto=format&fit=crop&w=1200&q=85",
+    drink:"https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=85",
+    dessert:"https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
+  };
+  img.src=fallbacks[type]||fallbacks.dinner;
 }
 function addOpenverseCredit(){
  document.querySelectorAll(".site-footer").forEach(footer=>{
