@@ -52,7 +52,8 @@ const BUILTIN_IMAGES={
   "9":"https://images.pexels.com/photos/6275220/pexels-photo-6275220.jpeg?cs=srgb&dl=pexels-n-voitkevich-6275220.jpg&fm=jpg",
   "14":"https://images.pexels.com/photos/5546551/pexels-photo-5546551.jpeg?cs=srgb&dl=pexels-cottonbro-5546551.jpg&fm=jpg",
   "16":"https://images.pexels.com/photos/10003794/pexels-photo-10003794.jpeg?cs=srgb&dl=pexels-laarkstudio-10003794.jpg&fm=jpg",
-  "20":"https://images.pexels.com/photos/8004561/pexels-photo-8004561.jpeg?cs=srgb&dl=pexels-darina-belonogova-8004561.jpg&fm=jpg"
+  "20":"https://images.pexels.com/photos/8004561/pexels-photo-8004561.jpeg?cs=srgb&dl=pexels-darina-belonogova-8004561.jpg&fm=jpg",
+  "320":"https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmon_with_Lime_%26_Garlic_Butter_%284437041010%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
 };
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
