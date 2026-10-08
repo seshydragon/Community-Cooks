@@ -38,12 +38,79 @@ const RECIPES = [
 ];
 
 let LIBRARY_RECIPES = RECIPES;
+const IMAGE_CACHE_KEY="ccExternalRecipeImages";
+const IMAGE_USED_KEY="ccExternalRecipeImageUrls";
+const BUILTIN_IMAGES=Object.fromEntries(RECIPES.map(r=>[String(r.id),r.image]));
+
+function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
+function imageUsed(){return new Set(storage(IMAGE_USED_KEY,[]));}
+function saveImageState(cache,used){
+  setStorage(IMAGE_CACHE_KEY,cache);
+  setStorage(IMAGE_USED_KEY,[...used].slice(-500));
+}
+function openverseQuery(r){
+  const cuisine=String(r.cuisine||"").replace(/-inspired/gi,"");
+  return '"'+r.name+'" food '+cuisine;
+}
+async function resolveExternalImage(r,cache,used){
+  const key=String(r.id);
+  if(BUILTIN_IMAGES[key]) return {url:BUILTIN_IMAGES[key],creator:"Unsplash",source:"Unsplash"};
+  if(cache[key]?.url) return cache[key];
+
+  try{
+    const q=encodeURIComponent(openverseQuery(r));
+    const endpoint="https://api.openverse.org/v1/images/?q="+q+"&license_type=commercial&source=wikimedia&page_size=10";
+    const response=await fetch(endpoint,{headers:{Accept:"application/json"}});
+    if(!response.ok) throw new Error("Openverse "+response.status);
+    const payload=await response.json();
+    const results=Array.isArray(payload.results)?payload.results:[];
+    const pick=results.find(item=>item?.url && !used.has(item.url)) || results.find(item=>item?.url);
+    if(!pick) throw new Error("No matching image");
+    const record={
+      url:pick.url,
+      creator:pick.creator||"Unknown creator",
+      source:pick.source||"Openverse",
+      license:pick.license||"",
+      license_url:pick.license_url||"",
+      landing_url:pick.foreign_landing_url||pick.detail_url||"https://openverse.org/"
+    };
+    cache[key]=record;
+    used.add(record.url);
+    saveImageState(cache,used);
+    return record;
+  }catch(error){
+    console.warn("External image lookup failed for",r.name,error);
+    return {url:BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85",creator:"Openverse fallback",source:"Openverse"};
+  }
+}
+async function hydrateRecipeImages(){
+  const cache=imageCache(), used=imageUsed();
+  const targets=LIBRARY_RECIPES.filter(r=>!BUILTIN_IMAGES[String(r.id)]);
+  const queue=[...targets];
+  const worker=async()=>{
+    while(queue.length){
+      const r=queue.shift();
+      const record=await resolveExternalImage(r,cache,used);
+      r.image=record.url;
+      r.imageMeta=record;
+    }
+  };
+  await Promise.all([worker(),worker(),worker(),worker()]);
+  saveImageState(cache,used);
+}
+
 async function loadRecipeLibrary(){
  try{
   const response=await fetch("data/recipes.json");
   if(!response.ok) throw new Error("recipe library unavailable");
   const data=await response.json();
-  if(Array.isArray(data)&&data.length) LIBRARY_RECIPES=data;
+  if(Array.isArray(data)&&data.length){
+    LIBRARY_RECIPES=data.map(r=>{
+      const built=BUILTIN_IMAGES[String(r.id)];
+      return built ? {...r,image:built} : r;
+    });
+    await hydrateRecipeImages();
+  }
  }catch(error){ console.warn("Using built-in recipe library.",error); }
  renderRecipes(); renderSaved(); renderHistory(); renderRecipe(); window.renderPlanner?.();
 }
@@ -64,12 +131,12 @@ function awardPoints(amount,key){
  return true;
 }
 function addPoints(amount,reason){return awardPoints(amount,reason+"-"+Date.now())?points():points()}
-function recipeImage(r){return r.image||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"}
-function imageFallback(img,type){
- const fallbacks={breakfast:"https://loremflickr.com/1200/800/breakfast,food?lock=101",lunch:"https://loremflickr.com/1200/800/lunch,food?lock=102",snack:"https://loremflickr.com/1200/800/snack,food?lock=103",drink:"https://loremflickr.com/1200/800/drink,food?lock=104",dessert:"https://loremflickr.com/1200/800/dessert,food?lock=105",dinner:"https://loremflickr.com/1200/800/dinner,food?lock=106"};
- const key=String(type||"lunch").toLowerCase();
- img.onerror=null; img.src=fallbacks[key]||fallbacks.lunch;
+function recipeImage(r){return r.image||BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85"}
+function imageFallback(img){
+ img.onerror=null;
+ img.src=BUILTIN_IMAGES["36"]||"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85";
 }
+
 
 function recipeCard(r){
  return '<article class="recipe-card"><a href="recipe.html?id='+encodeURIComponent(r.id)+'"><div class="recipe-image"><img src="'+esc(recipeImage(r))+'" alt="'+esc(r.name)+'" loading="lazy" onerror="imageFallback(this, this.dataset.type)" data-type="'+esc(r.type.toLowerCase())+'" ></div><div class="recipe-card-body"><div class="recipe-meta"><span>'+esc(r.type)+'</span><span>'+r.time+' min</span></div><h2>'+esc(r.name)+'</h2><p>'+esc(r.description)+'</p><div class="recipe-footer"><span>By '+esc(r.creator||"Community Cooks")+'</span><button type="button" class="save-button" data-save="'+esc(r.id)+'">'+(isSaved(r.id)?"Saved":"Save")+'</button></div></div></a></article>';
@@ -107,7 +174,9 @@ function renderRecipe(){
  const r=findRecipe(new URLSearchParams(location.search).get("id"));
  if(!r){root.innerHTML='<div class="page-shell"><section class="empty-state"><h1>Recipe not found.</h1><a class="button button-blue" href="discover.html">Back to recipes</a></section></div>';return}
  const saved=isSaved(r.id);
- root.innerHTML='<section class="recipe-hero"><div class="recipe-hero-image"><img src="'+esc(r.image)+'" alt="'+esc(r.name)+'"></div><div class="recipe-hero-copy"><p class="eyebrow">'+esc(r.type)+' · '+r.time+' minutes</p><h1>'+esc(r.name)+'</h1><p>'+esc(r.description)+'</p><p class="recipe-byline">Created by '+esc(r.creator||"Community Cooks")+'</p><div class="recipe-actions"><button class="button button-blue" id="cookButton">Start Cook Mode</button><button class="chip" id="saveRecipe">'+(saved?"Saved recipe":"Save recipe")+'</button><a class="chip" href="shopping-list.html?recipe='+encodeURIComponent(r.id)+'">Shopping list</a></div></div></section><section class="recipe-content"><div><p class="eyebrow">Ingredients</p><ul class="ingredient-list">'+r.ingredients.map(x=>"<li>"+esc(x)+"</li>").join("")+'</ul></div><div><p class="eyebrow">Instructions</p><ol class="step-list">'+r.steps.map((x,i)=>"<li><span>"+String(i+1).padStart(2,"0")+"</span><p>"+esc(x)+"</p></li>").join("")+"</ol></div></section>";
+ const meta=r.imageMeta;
+ const credit=meta?.source==="Unsplash"?"Image via Unsplash":meta?.creator?('Image by '+meta.creator+' via '+(meta.source||"Openverse")):"Image sourced through Openverse";
+ root.innerHTML='<section class="recipe-hero"><div class="recipe-hero-image"><img src="'+esc(r.image)+'" alt="'+esc(r.name)+'"></div><div class="recipe-hero-copy"><p class="eyebrow">'+esc(r.type)+' · '+r.time+' minutes</p><h1>'+esc(r.name)+'</h1><p>'+esc(r.description)+'</p><p class="recipe-byline">Created by '+esc(r.creator||"Community Cooks")+'</p><p class="image-credit">'+esc(credit)+'</p><div class="recipe-actions"><button class="button button-blue" id="cookButton">Start Cook Mode</button><button class="chip" id="saveRecipe">'+(saved?"Saved recipe":"Save recipe")+'</button><a class="chip" href="shopping-list.html?recipe='+encodeURIComponent(r.id)+'">Shopping list</a></div></div></section><section class="recipe-content"><div><p class="eyebrow">Ingredients</p><ul class="ingredient-list">'+r.ingredients.map(x=>"<li>"+esc(x)+"</li>").join("")+'</ul></div><div><p class="eyebrow">Instructions</p><ol class="step-list">'+r.steps.map((x,i)=>"<li><span>"+String(i+1).padStart(2,"0")+"</span><p>"+esc(x)+"</p></li>").join("")+"</ol></div></section>";
  $("saveRecipe")?.addEventListener("click",()=>{$("saveRecipe").textContent=toggleSaved(r.id)?"Saved recipe":"Save recipe"});
  $("cookButton")?.addEventListener("click",()=>location.href="cook.html?id="+encodeURIComponent(r.id));
 }
