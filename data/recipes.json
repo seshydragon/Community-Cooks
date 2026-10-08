@@ -1129,7 +1129,7 @@
     ],
     "description": "Chicken with broccoli and rice, finished with a garlic herb sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fdf2f8%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%231d4ed8%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-2%20400%20330)%22%3E%3Cpath%20fill%3D%22%231d4ed8%22%20d%3D%22M235%20315q165%20190%20330%200v70q-165%20120-330%200z%22%2F%3E%3Cellipse%20fill%3D%22%23fdf2f8%22%20stroke%3D%22%231d4ed8%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22315%22%20rx%3D%22155%22%20ry%3D%2275%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22318%22%20cy%3D%22315%22%20r%3D%2225%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22417%22%20cy%3D%22340%22%20r%3D%2223%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EGarlic%20Herb%20Chicken%20%26amp%3B%20Broccoli%20Rice%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_with_rice_and_vegetables.jpg",
     "ingredients": [
       "1 lb chicken breast",
       "2 cups cooked rice",
@@ -1143,7 +1143,11 @@
       "Add cups cooked rice, cups broccoli, garlic cloves, 1 tbsp olive oil and cook until the vegetables are tender and the protein or legumes are fully cooked.",
       "Stir in Salt to taste and cook until the flavors combine and the dish is hot.",
       "Taste and adjust the listed seasonings before serving."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "HaJunkiyada",
+    "imageLicense": "CC BY-SA 4.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_with_rice_and_vegetables.jpg"
   },
   {
     "id": 38,
@@ -1194,7 +1198,7 @@
     ],
     "description": "Salmon with broccoli and rice, finished with a garlic herb sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eff6ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23c2410c%22%3EDinner%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(0%20400%20330)%22%3E%3Cpath%20fill%3D%22%23c2410c%22%20d%3D%22M235%20315q165%20190%20330%200v70q-165%20120-330%200z%22%2F%3E%3Cellipse%20fill%3D%22%23eff6ff%22%20stroke%3D%22%23c2410c%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22315%22%20rx%3D%22157%22%20ry%3D%2275%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22324%22%20cy%3D%22315%22%20r%3D%2225%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22411%22%20cy%3D%22340%22%20r%3D%2223%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EGarlic%20Herb%20Salmon%20%26amp%3B%20Broccoli%20Rice%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Healthy_Entree_%288514368701%29.jpg",
     "ingredients": [
       "1 lb salmon",
       "2 cups cooked rice",
@@ -1208,7 +1212,11 @@
       "Add cups cooked rice, cups broccoli, garlic cloves, 1 tbsp olive oil and cook until the vegetables are tender and the protein or legumes are fully cooked.",
       "Stir in Salt to taste and cook until the flavors combine and the dish is hot.",
       "Taste and adjust the listed seasonings before serving."
-    ]
+    ],
+    "imageSource": "Wikimedia Commons",
+    "imageCredit": "Prayitno / Thank you for (12 millions +) view",
+    "imageLicense": "CC BY 2.0",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Healthy_Entree_(8514368701).jpg"
   },
   {
     "id": 40,
