@@ -38,8 +38,8 @@ const RECIPES = [
 ];
 
 let LIBRARY_RECIPES = RECIPES;
-const IMAGE_CACHE_KEY="ccExternalRecipeImages-v2";
-const IMAGE_USED_KEY="ccExternalRecipeImageUrls-v2";
+const IMAGE_CACHE_KEY="ccExternalRecipeImages-v3";
+const IMAGE_USED_KEY="ccExternalRecipeImageUrls-v3";
 const BUILTIN_IMAGES={};
 
 function imageCache(){return storage(IMAGE_CACHE_KEY,{});}
@@ -48,28 +48,63 @@ function saveImageState(cache,used){
   setStorage(IMAGE_CACHE_KEY,cache);
   setStorage(IMAGE_USED_KEY,[...used].slice(-500));
 }
-function openverseQuery(r){
-  const name=String(r.name||"");
-  const cuisine=String(r.cuisine||"").replace(/-inspired/gi,"");
-  const cleaned=name.replace(/&/g," ").replace(/\\b(herb|smoky|spicy|classic|quick|homemade|bowl|plate)\\b/gi," ");
-  const type=String(r.type||"").toLowerCase();
-  const dish=cleaned.replace(/\\s+/g," ").trim();
-  return '"' + dish + '" ' + cuisine + " " + type + " food";
+function normalizeImageText(value){
+  return String(value||"").toLowerCase()
+    .replace(/[^a-z0-9\\s-]/g," ")
+    .replace(/\\b(the|a|an|classic|homemade|quick|easy|recipe|food|dish|plate|bowl)\\b/g," ")
+    .replace(/\\s+/g," ").trim();
+}
+function recipeSearchTerms(r){
+  const name=normalizeImageText(r.name);
+  const cuisine=normalizeImageText(r.cuisine).replace(/-inspired/g,"");
+  const type=normalizeImageText(r.type);
+  const tags=(r.tags||[]).map(normalizeImageText).filter(Boolean);
+  return {name,cuisine,type,tags};
+}
+function openverseQueries(r){
+  const {name,cuisine,type}=recipeSearchTerms(r);
+  const queries=[
+    '"' + name + '"',
+    '"' + name + '" ' + cuisine,
+    name + ' ' + cuisine + ' ' + type
+  ];
+  return [...new Set(queries.map(x=>x.trim()).filter(Boolean))];
+}
+function scoreOpenverseResult(item,r){
+  const {name,cuisine,type}=recipeSearchTerms(r);
+  const hay=normalizeImageText([
+    item?.title,item?.description,item?.tags?.map?.(x=>x?.name||x),
+    item?.meta_data?.description
+  ].flat().join(" "));
+  if(!item?.url || !hay) return -100;
+  const nameWords=name.split(" ").filter(w=>w.length>2);
+  const exact=hay.includes(name) ? 12 : 0;
+  const wordHits=nameWords.reduce((n,w)=>n+(hay.includes(w)?1:0),0);
+  const cuisineHit=cuisine && hay.includes(cuisine)?3:0;
+  const typeHit=type && hay.includes(type)?1:0;
+  return exact + wordHits*2 + cuisineHit + typeHit;
 }
 async function resolveExternalImage(r,cache,used){
   const key=String(r.id);
-  if(BUILTIN_IMAGES[key]) return {url:BUILTIN_IMAGES[key],creator:"Unsplash",source:"Unsplash"};
   if(cache[key]?.url) return cache[key];
 
   try{
-    const q=encodeURIComponent(openverseQuery(r));
-    const endpoint="https://api.openverse.org/v1/images/?q="+q+"&license=by,by-sa,cc0&source=wikimedia&page_size=10";
-    const response=await fetch(endpoint,{headers:{Accept:"application/json"}});
-    if(!response.ok) throw new Error("Openverse "+response.status);
-    const payload=await response.json();
-    const results=Array.isArray(payload.results)?payload.results:[];
-    const pick=results.find(item=>item?.url && !used.has(item.url) && item?.thumbnail) || results.find(item=>item?.url && !used.has(item.url)) || results.find(item=>item?.url);
-    if(!pick) throw new Error("No matching image");
+    const candidates=[];
+    for(const query of openverseQueries(r)){
+      const endpoint="https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&license=by,by-sa,cc0&source=wikimedia&page_size=20";
+      const response=await fetch(endpoint,{headers:{Accept:"application/json"}});
+      if(!response.ok) continue;
+      const payload=await response.json();
+      for(const item of (Array.isArray(payload.results)?payload.results:[])){
+        if(!item?.url || used.has(item.url)) continue;
+        candidates.push({item,score:scoreOpenverseResult(item,r)});
+      }
+      if(candidates.some(x=>x.score>=12)) break;
+    }
+    candidates.sort((x,y)=>y.score-x.score);
+    const best=candidates[0];
+    if(!best || best.score<6) throw new Error("No sufficiently relevant image");
+    const pick=best.item;
     const record={
       url:pick.url,
       creator:pick.creator||"Unknown creator",
@@ -120,7 +155,7 @@ async function loadRecipeLibrary(){
   if(Array.isArray(data)&&data.length){
     LIBRARY_RECIPES=data.map(r=>{
       const built=BUILTIN_IMAGES[String(r.id)];
-      return built ? {...r,image:built} : r;
+      return built ? {...r,image:built} : {...r,image:"",imageMeta:null};
     });
     await hydrateRecipeImages();
   }
