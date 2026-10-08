@@ -27,12 +27,12 @@ function violates(r,prefs){const text=recipeText(r),tags=new Set(r.tags||[]);for
 function scoreRecipe(r,prefs,meal,used){if(violates(r,prefs))return -1e6;const tags=new Set(r.tags||[]);let score=r.type===meal?40:0;prefs.forEach(p=>{if(tags.has(p))score+=12;if(p===r.cuisine)score+=18});if(prefs.includes("quick")&&Number(r.time)<=30)score+=8;if(prefs.includes("ultra-quick")&&Number(r.time)<=15)score+=10;if(prefs.includes("high-protein")&&tags.has("high-protein"))score+=20;if(prefs.includes("high-fiber")&&tags.has("high-fiber"))score+=20;if(prefs.includes("protein-fiber")&&tags.has("high-protein")&&tags.has("high-fiber"))score+=25;if(prefs.includes("meal-prep")&&tags.has("meal-prep"))score+=10;if(prefs.includes("one-pan")&&tags.has("one-pan"))score+=10;if(used.has(String(r.id)))score-=100;return score}
 function pickRecipe(pool,prefs,meal,used){
   const cuisines=["American","Italian","Mexican","Indian","Thai","Japanese","Korean","Mediterranean"];
-  const wantedCuisine=prefs.find(p=>cuisines.includes(p))||null;
+  const wantedCuisines=prefs.filter(p=>cuisines.includes(p));
   const strictNutrition=["high-protein","high-fiber","protein-fiber"];
   const strictCandidates=(source,relaxNutrition=false)=>{
     return source.filter(r=>{
       const reduced=relaxNutrition?prefs.filter(p=>!strictNutrition.includes(p)):prefs;
-      return !violates(r,reduced) && (!wantedCuisine || r.cuisine===wantedCuisine);
+      return !violates(r,reduced) && (!wantedCuisines.length || wantedCuisines.includes(r.cuisine));
     });
   };
 
