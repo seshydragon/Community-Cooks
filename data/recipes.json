@@ -13,7 +13,7 @@
     ],
     "description": "Fluffy pancakes with crisp edges and a soft center.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfeff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%236d28d9%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-3%20400%20330)%22%3E%3Cpath%20fill%3D%22%236d28d9%22%20d%3D%22M210%20390h380l-30-150H240z%22%2F%3E%3Cpath%20fill%3D%22%23ecfeff%22%20d%3D%22M240%20240h320l-35-55H275z%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22290%22%20cy%3D%22225%22%20r%3D%2210%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22416%22%20cy%3D%22215%22%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EClassic%20Pancakes%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/9415/pexels-photo-9415.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 1/2 cups all-purpose flour",
       "3 1/2 tsp baking powder",
@@ -44,7 +44,7 @@
     ],
     "description": "Creamy avocado, a fried egg, and crisp toast.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfeff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%2315803d%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-2%20400%20330)%22%3E%3Crect%20fill%3D%22%2315803d%22%20x%3D%22216%22%20y%3D%22250%22%20width%3D%22350%22%20height%3D%22180%22%20rx%3D%2231%22%2F%3E%3Cpath%20stroke%3D%22%23ecfeff%22%20stroke-width%3D%2220%22%20stroke-linecap%3D%22round%22%20d%3D%22M260%20305h280M260%20355h280M260%20405h280%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EAvocado%20Egg%20Toast%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/30336930/pexels-photo-30336930.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "2 slices sourdough bread",
       "1 ripe avocado",
@@ -74,7 +74,7 @@
     ],
     "description": "Layers of yogurt, berries, and crunchy granola.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fffbeb%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%2315803d%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-1%20400%20330)%22%3E%3Cpath%20fill%3D%22%2315803d%22%20d%3D%22M210%20390h380l-30-150H240z%22%2F%3E%3Cpath%20fill%3D%22%23fffbeb%22%20d%3D%22M240%20240h320l-35-55H275z%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22300%22%20cy%3D%22225%22%20r%3D%2210%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22408%22%20cy%3D%22215%22%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EBerry%20Yogurt%20Parfait%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/7473576/pexels-photo-7473576.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 1/2 cups Greek yogurt",
       "1 cup mixed berries",
@@ -103,7 +103,7 @@
     ],
     "description": "A warm tortilla packed with eggs, beans, cheese, and salsa.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fffbeb%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%2315803d%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(0%20400%20330)%22%3E%3Crect%20fill%3D%22%2315803d%22%20x%3D%22222%22%20y%3D%22250%22%20width%3D%22350%22%20height%3D%22180%22%20rx%3D%2233%22%2F%3E%3Cpath%20stroke%3D%22%23fffbeb%22%20stroke-width%3D%2220%22%20stroke-linecap%3D%22round%22%20d%3D%22M260%20305h280M260%20355h280M260%20405h280%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EBreakfast%20Burrito%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/29333173/pexels-photo-29333173.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "2 large flour tortillas",
       "4 eggs",
@@ -135,7 +135,7 @@
     ],
     "description": "Creamy oats cooked with banana and cinnamon.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fdf2f8%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%2315803d%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(1%20400%20330)%22%3E%3Crect%20fill%3D%22%2315803d%22%20x%3D%22245%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2234%22%2F%3E%3Ccircle%20fill%3D%22%23fdf2f8%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2229%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EBanana%20Oatmeal%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/35578518/pexels-photo-35578518.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup rolled oats",
       "2 cups milk or water",
@@ -164,7 +164,7 @@
     ],
     "description": "Eggs gently cooked in a spiced tomato and pepper sauce.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfdf5%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23b45309%22%3EBreakfast%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(2%20400%20330)%22%3E%3Cpath%20fill%3D%22%23b45309%22%20d%3D%22M245%20330q155%20170%20310%200v65q-155%20105-310%200z%22%2F%3E%3Cellipse%20fill%3D%22%23ecfdf5%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22330%22%20rx%3D%22155%22%20ry%3D%2268%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22349%22%20cy%3D%22330%22%20r%3D%2217%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22422%22%20cy%3D%22350%22%20r%3D%2215%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EShakshuka%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/6275109/pexels-photo-6275109.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 tbsp olive oil",
       "1 onion, diced",
@@ -255,7 +255,7 @@
     ],
     "description": "Crisp falafel with cucumber, tomato, greens, and tahini.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fffbeb%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be185d%22%3ELunch%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-2%20400%20330)%22%3E%3Crect%20fill%3D%22%23be185d%22%20x%3D%22237%22%20y%3D%22250%22%20width%3D%22350%22%20height%3D%22180%22%20rx%3D%2238%22%2F%3E%3Cpath%20stroke%3D%22%23fffbeb%22%20stroke-width%3D%2220%22%20stroke-linecap%3D%22round%22%20d%3D%22M260%20305h280M260%20355h280M260%20405h280%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EFalafel%20Pita%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/12814859/pexels-photo-12814859.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "6 cooked falafel",
       "2 pita breads",
@@ -284,7 +284,7 @@
     ],
     "description": "Warm rice topped with savory tuna, cucumber, and sesame.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfdf5%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be185d%22%3ELunch%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-1%20400%20330)%22%3E%3Cpath%20fill%3D%22%23be185d%22%20d%3D%22M235%20315q165%20190%20330%200v70q-165%20120-330%200z%22%2F%3E%3Cellipse%20fill%3D%22%23ecfdf5%22%20stroke%3D%22%23be185d%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22315%22%20rx%3D%22164%22%20ry%3D%2275%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22318%22%20cy%3D%22315%22%20r%3D%2225%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22417%22%20cy%3D%22340%22%20r%3D%2223%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3ETuna%20Rice%20Bowl%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/15913460/pexels-photo-15913460.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "2 cups cooked rice",
       "1 can tuna, drained",
@@ -315,7 +315,7 @@
     ],
     "description": "Creamy tomato soup paired with a crisp, cheesy sandwich.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eff6ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3ELunch%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(0%20400%20330)%22%3E%3Cpath%20fill%3D%22%23be123c%22%20d%3D%22M245%20330q155%20170%20310%200v65q-155%20105-310%200z%22%2F%3E%3Cellipse%20fill%3D%22%23eff6ff%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22330%22%20rx%3D%22160%22%20ry%3D%2268%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22333%22%20cy%3D%22330%22%20r%3D%2217%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22434%22%20cy%3D%22350%22%20r%3D%2215%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3ETomato%20Soup%20%26amp%3B%20Grilled%20Cheese%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/33706245/pexels-photo-33706245.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 tbsp olive oil",
       "1/2 onion, diced",
@@ -469,7 +469,7 @@
     ],
     "description": "No-bake oat and peanut butter bites for a quick homemade snack.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfdf5%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%230e7490%22%3ESnack%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-2%20400%20330)%22%3E%3Crect%20fill%3D%22%230e7490%22%20x%3D%22249%22%20y%3D%22255%22%20width%3D%22310%22%20height%3D%22170%22%20rx%3D%2245%22%2F%3E%3Ccircle%20fill%3D%22%23ecfdf5%22%20cx%3D%22330%22%20cy%3D%22320%22%20r%3D%2228%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22405%22%20cy%3D%22365%22%20r%3D%2225%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EEnergy%20Bites%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/10281285/pexels-photo-10281285.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup rolled oats",
       "1/2 cup peanut butter",
@@ -558,7 +558,7 @@
     ],
     "description": "A cold, creamy mango and yogurt drink.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fdf2f8%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(1%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23fdf2f8%22%20d%3D%22M305%20291h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EMango%20Lassi%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/18142611/pexels-photo-18142611.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup mango chunks",
       "1 cup plain yogurt",
@@ -588,7 +588,7 @@
     ],
     "description": "Earthy matcha shaken with milk and served over ice.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfeff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%236d28d9%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(2%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%236d28d9%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23ecfeff%22%20d%3D%22M305%20292h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%236d28d9%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EIced%20Matcha%20Latte%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/8004561/pexels-photo-8004561.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 tsp matcha powder",
       "2 tbsp warm water",
@@ -617,7 +617,7 @@
     ],
     "description": "Fresh strawberries blended with bright lemon and cold water.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfdf5%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(3%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23ecfdf5%22%20d%3D%22M305%20293h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EStrawberry%20Lemonade%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/30591640/pexels-photo-30591640.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup strawberries",
       "1/2 cup lemon juice",
@@ -646,7 +646,7 @@
     ],
     "description": "A bright lime drink with fresh mint and sparkling water.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfeff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%2315803d%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-3%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23ecfeff%22%20d%3D%22M305%20294h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EMint%20Lime%20Cooler%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/37079578/pexels-photo-37079578.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "2 limes",
       "8 mint leaves",
@@ -675,7 +675,7 @@
     ],
     "description": "Cold brew coffee balanced with creamy milk over ice.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23ecfeff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%230e7490%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-2%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%230e7490%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23ecfeff%22%20d%3D%22M305%20295h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%230e7490%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3ECold%20Brew%20Latte%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/3955680/pexels-photo-3955680.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup cold brew coffee",
       "1/2 cup milk",
@@ -703,7 +703,7 @@
     ],
     "description": "Black tea chilled with peach and a little sweetness.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eff6ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23b45309%22%3EDrink%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(-1%20400%20330)%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%2210%22%20d%3D%22M285%20220h230l-25%20220H310z%22%2F%3E%3Cpath%20fill%3D%22%23eff6ff%22%20d%3D%22M305%20296h190v125H325z%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%2212%22%20d%3D%22M515%20255q100%2015%205%20105%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EPeach%20Iced%20Tea%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/33573170/pexels-photo-33573170.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "2 black tea bags",
       "2 cups hot water",
@@ -733,7 +733,7 @@
     ],
     "description": "A warm single-serving chocolate cake made in a mug.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fff7ed%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be185d%22%3EDessert%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(0%20400%20330)%22%3E%3Cpath%20fill%3D%22%23be185d%22%20d%3D%22M210%20390h380l-30-150H240z%22%2F%3E%3Cpath%20fill%3D%22%23fff7ed%22%20d%3D%22M240%20240h320l-35-55H275z%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22320%22%20cy%3D%22225%22%20r%3D%2210%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22392%22%20cy%3D%22215%22%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EChocolate%20Mug%20Cake%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/36837402/pexels-photo-36837402.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "4 tbsp flour",
       "2 tbsp sugar",
@@ -764,7 +764,7 @@
     ],
     "description": "Individual cheesecake cups with berries and a crumb crust.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23fffbeb%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3EDessert%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(1%20400%20330)%22%3E%3Cpath%20fill%3D%22%23be123c%22%20d%3D%22M210%20390h380l-30-150H240z%22%2F%3E%3Cpath%20fill%3D%22%23fffbeb%22%20d%3D%22M240%20240h320l-35-55H275z%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22325%22%20cy%3D%22225%22%20r%3D%2210%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22388%22%20cy%3D%22215%22%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EBerry%20Cheesecake%20Cups%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/35233467/pexels-photo-35233467.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "4 oz cream cheese",
       "1/4 cup Greek yogurt",
@@ -794,7 +794,7 @@
     ],
     "description": "Golden dough bites tossed in cinnamon sugar.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eff6ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%236d28d9%22%3EDessert%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(2%20400%20330)%22%3E%3Cpath%20fill%3D%22%236d28d9%22%20d%3D%22M210%20390h380l-30-150H240z%22%2F%3E%3Cpath%20fill%3D%22%23eff6ff%22%20d%3D%22M240%20240h320l-35-55H275z%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22330%22%20cy%3D%22225%22%20r%3D%2210%22%2F%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%22384%22%20cy%3D%22215%22%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3ECinnamon%20Churro%20Bites%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/11753323/pexels-photo-11753323.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup flour",
       "1 cup water",
@@ -825,7 +825,7 @@
     ],
     "description": "Sweet coconut sticky rice served with ripe mango.",
     "creator": "Community Cooks",
-    "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eff6ff%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%2270%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23be123c%22%3EDessert%3C%2Ftext%3E%3Cg%20transform%3D%22rotate(3%20400%20330)%22%3E%3Cpath%20fill%3D%22%23be123c%22%20d%3D%22M235%20315q165%20190%20330%200v70q-165%20120-330%200z%22%2F%3E%3Cellipse%20fill%3D%22%23eff6ff%22%20stroke%3D%22%23be123c%22%20stroke-width%3D%228%22%20cx%3D%22400%22%20cy%3D%22315%22%20rx%3D%22158%22%20ry%3D%2275%22%2F%3E%3Ccircle%20fill%3D%22%2316a34a%22%20cx%3D%22318%22%20cy%3D%22315%22%20r%3D%2225%22%2F%3E%3Ccircle%20fill%3D%22%23dc2626%22%20cx%3D%22417%22%20cy%3D%22340%22%20r%3D%2223%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22535%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%20fill%3D%22%23111827%22%3EMango%20Sticky%20Rice%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "image": "https://images.pexels.com/photos/37107823/pexels-photo-37107823.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       "1 cup glutinous rice",
       "3/4 cup coconut milk",
