@@ -77,9 +77,9 @@ const BUILTIN_IMAGES={
     "35":"https://pixabay.com/get/food-salmon-teriyaki-fish-eat-712665.jpg",
     "36":"https://www.foodiesfeed.com/wp-content/uploads/2023/06/chickpea-coconut-curry.jpg",
     "37":"https://upload.wikimedia.org/wikipedia/commons/8/8b/Chicken_and_rice.jpg",
-    "38":"https://upload.wikimedia.org/wikipedia/commons/8/8b/Chicken_and_rice.jpg",
+    "38":"https://upload.wikimedia.org/wikipedia/commons/3/37/Basmati_rice_and_turkey.jpg",
     "39":"https://upload.wikimedia.org/wikipedia/commons/6/67/Salmon_with_Rice_and_Sauce_finished_dish.jpg",
-    "40":"https://images.pexels.com/photos/566345/pexels-photo-566345.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "40":"https://images.pexels.com/photos/11015917/pexels-photo-11015917.jpeg?cs=srgb&dl=pexels-fox-58267-11015917.jpg&fm=jpg",
   "34":"https://images.pexels.com/photos/35759994/pexels-photo-35759994.jpeg?auto=compress&cs=tinysrgb&w=1200",
   "320":"https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmon_with_Lime_%26_Garlic_Butter_%284437041010%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
 };
