@@ -53,6 +53,16 @@ const BUILTIN_IMAGES={
   "14":"https://images.pexels.com/photos/5546551/pexels-photo-5546551.jpeg?cs=srgb&dl=pexels-cottonbro-5546551.jpg&fm=jpg",
   "16":"https://images.pexels.com/photos/10003794/pexels-photo-10003794.jpeg?cs=srgb&dl=pexels-laarkstudio-10003794.jpg&fm=jpg",
   "20":"https://images.pexels.com/photos/8004561/pexels-photo-8004561.jpeg?cs=srgb&dl=pexels-darina-belonogova-8004561.jpg&fm=jpg",
+  "7":"https://images.pexels.com/photos/13292629/pexels-photo-13292629.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "11":"https://images.pexels.com/photos/33706245/pexels-photo-33706245.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "21":"https://images.pexels.com/photos/30591640/pexels-photo-30591640.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "22":"https://images.pexels.com/photos/37079578/pexels-photo-37079578.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "23":"https://images.pexels.com/photos/3955680/pexels-photo-3955680.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "24":"https://images.pexels.com/photos/33573170/pexels-photo-33573170.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "25":"https://images.pexels.com/photos/36837402/pexels-photo-36837402.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "28":"https://images.pexels.com/photos/37107823/pexels-photo-37107823.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "33":"https://images.pexels.com/photos/5774000/pexels-photo-5774000.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "34":"https://images.pexels.com/photos/35759994/pexels-photo-35759994.jpeg?auto=compress&cs=tinysrgb&w=1200",
   "320":"https://upload.wikimedia.org/wikipedia/commons/e/eb/Salmon_with_Lime_%26_Garlic_Butter_%284437041010%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
 };
 
